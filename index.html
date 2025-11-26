@@ -1,0 +1,1208 @@
+<!doctype html>
+<html lang="pt-PT">
+
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Luckiest+Guy&family=Sriracha&display=swap"
+    rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mapa CEsA</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    :root {
+      --bg: #F5E9D0;
+      --accent: #E47D29;
+      --card: #fff;
+      --muted: #6b6b6b;
+      --glass: rgba(255, 255, 255, 0.88);
+      --panel-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+
+      /* Fontes */
+      --font-body: 'Heebo', sans-serif;
+      --font-title: 'Luckiest Guy', cursive;
+      --font-subtitle: 'Sriracha', cursive;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: var(--font-body);
+      background: var(--bg);
+    }
+
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+
+    /* Search (top-right) */
+    .search-box {
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      z-index: 1400;
+    }
+
+    .search-box input {
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      width: 280px;
+      font-size: 14px;
+      background: #fff;
+      font-family: var(--font-body);
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 6px rgba(228, 125, 41, 0.18);
+    }
+
+    #searchResults {
+      position: absolute;
+      top: 46px;
+      right: 0;
+      z-index: 1500;
+      width: 350px;
+      max-height: 300px;
+      overflow-y: auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      display: none;
+      padding: 10px;
+      font-family: var(--font-body);
+    }
+
+    #searchResults li {
+      list-style: none;
+      padding: 10px;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-body);
+    }
+
+    #searchResults li:hover {
+      background: #fbefe0;
+    }
+
+    .result-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .result-item img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 6px;
+      background-color: #eee;
+    }
+
+    .result-item .m-title {
+      font-weight: bold;
+      color: var(--accent);
+      font-family: var(--font-title);
+      /* LUCKIEST GUY */
+      font-weight: 400;
+      letter-spacing: 0.1em;
+    }
+
+    .result-item .m-cat {
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--font-subtitle);
+
+    }
+
+    /* Botão Digitais */
+    /* Botão Digitais CENTRALIZADO */
+    #digitalBtn {
+      position: fixed;
+      left: 15px;
+      /* distância da esquerda */
+      bottom: 100px;
+      /* distância do fundo */
+      z-index: 2100;
+      /* acima do preview */
+      z-index: 1500;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #0076C0;
+      color: #fff;
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      transition: transform 0.2s ease, background 0.2s;
+      font-family: var(--font-body);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #digitalBtn:hover {
+      background: #0076C0;
+    }
+
+
+    #digitalPanel {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 360px;
+      max-height: 70vh;
+      background: var(--glass);
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      box-shadow: var(--panel-shadow);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      display: none;
+      flex-direction: column;
+      z-index: 2000;
+      overflow: hidden;
+      animation: fadeIn 0.2s ease;
+      font-family: var(--font-body);
+    }
+
+    #digitalPanel.open {
+      display: flex;
+    }
+
+    #digitalPanel h3 {
+      margin: 0;
+      padding: 12px 16px;
+      background: #0076C0;
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      font-family: var(--font-subtitle);
+    }
+
+    #digitalList {
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    #digitalList li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 6px;
+      font-family: var(--font-body);
+    }
+
+    #digitalList li:hover {
+      background: #fbefe0;
+    }
+
+    #digitalList img {
+      width: 44px;
+      height: 44px;
+      border-radius: 6px;
+      object-fit: cover;
+      background: #eee;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .side-panel {
+      position: fixed;
+      right: 18px;
+      top: 56px;
+      width: 35%;
+      max-width: 400px;
+      min-width: 280px;
+      height: calc(100vh - 96px);
+      background: var(--glass);
+      border-radius: 12px;
+      box-shadow: var(--panel-shadow);
+      z-index: 2000;
+      transform: translateX(420px);
+      transition: transform 260ms ease;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      backdrop-filter: blur(4px);
+      font-family: var(--font-body);
+    }
+
+    .side-panel.open {
+      transform: translateX(0);
+    }
+
+    @media(max-width:900px) {
+      .side-panel {
+        width: 90%;
+        right: 6px;
+        transform: translateX(110%);
+      }
+    }
+
+    .panel-header {
+      position: relative;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.98));
+    }
+
+    .panel-header img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+      border: 4px solid rgba(255, 255, 255, 0.85);
+      background: #eee;
+    }
+
+    .panel-name {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--accent);
+      text-align: center;
+      margin-top: 6px;
+      font-family: var(--font-title);
+      /* LUCKIEST GUY */
+      font-weight: 400;
+      letter-spacing: 0.1em;
+    }
+
+    .panel-cat {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+      font-family: var(--font-subtitle);
+    }
+
+    .media-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6px;
+    }
+
+    .media-row a {
+      display: inline-flex;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      font-size: 16px;
+    }
+
+    .panel-body {
+      padding: 12px 16px;
+      margin: 0 12px;
+      overflow: auto;
+      flex: 1;
+    }
+
+    .panel-about {
+      margin: 0 30px;
+    }
+
+    .section-title {
+      color: var(--accent);
+      font-weight: 700;
+      padding-left: 15%;
+      margin: 5px 0px;
+      font-size: 13px;
+      font-family: var(--font-subtitle);
+      /* SRIRACHA */
+      letter-spacing: 0.1em;
+    }
+
+    .section-about-title {
+      color: var(--accent);
+      font-weight: 700;
+      margin: 5px 0;
+      font-size: 13px;
+      font-family: var(--font-subtitle);
+      /* SRIRACHA */
+      letter-spacing: 0.1em;
+    }
+
+    .about {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 12px;
+      white-space: pre-wrap;
+      font-family: var(--font-body);
+    }
+
+    .info-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin: 4px 4px;
+    }
+
+    .info-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex: 0 0 34px;
+    }
+
+    .info-text {
+      font-size: 14px;
+      color: #333;
+      word-break: break-word;
+      font-family: var(--font-body);
+    }
+
+    .static-activities {
+      margin-top: 12px;
+      padding: 10px;
+      background: #fff6f0;
+      border-radius: 8px;
+      border: 1px solid rgba(228, 125, 41, 0.06);
+      color: var(--muted);
+      font-size: 13px;
+      font-family: var(--font-body);
+    }
+
+    .panel-close {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      background: rgba(0, 0, 0, 0.06);
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+    }
+
+    /* Filters bottom-left */
+    .filter-panel {
+      position: absolute;
+      left: 90px;
+      bottom: 16px;
+      z-index: 1300;
+      border-radius: 5px;
+      padding: 10px;
+      background: var(--card);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 198px;
+      font-family: var(--font-body);
+    }
+
+    .filter-item {
+      border-radius: 25px;
+      background: #fff;
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 13px;
+      font-family: var(--font-subtitle);
+      /* SRIRACHA */
+    }
+
+    .filter-item.active {
+      background: var(--card);
+      /* here */
+      color: #fff;
+    }
+
+    .filter-controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .toggle-all {
+      padding: 6px 10px;
+      margin-left: 65px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-body);
+    }
+
+    #toggleFilterBtn {
+      position: absolute;
+      bottom: 28px;
+      /* antes era top: 16px */
+      left: 16px;
+      z-index: 1400;
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: #fff;
+      color: #0076C0;
+      font-size: 28px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease, background 0.2s;
+    }
+
+    /* Ocultar o painel de filtros por padrão */
+    .filter-panel {
+      display: none;
+      /* agora começa oculto */
+    }
+
+    .filter-panel.open {
+      display: flex;
+      /* exibe quando tiver a classe open */
+    }
+
+
+
+    /* leaflet z-index */
+    .leaflet-container {
+      z-index: 0;
+      font-family: var(--font-body);
+    }
+
+    .leaflet-control-zoom-in,
+    .leaflet-control-zoom-out {
+      background: transparent !important;
+      color: transparent !important;
+      width: 60px !important;
+      height: 60px !important;
+      border: none !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .leaflet-control-zoom-in::before {
+      content: "";
+      width: 58px;
+      height: 58px;
+      background-image: url("icons_filter/zoomMaxIcon.svg");
+
+    }
+
+    /* Ícone personalizado do Zoom OUT */
+    .leaflet-control-zoom-out::before {
+      content: "";
+      width: 58px;
+      height: 58px;
+      background-image: url("icons_filter/zoomMinIcon.svg");
+
+    }
+
+    .leaflet-control-zoom-in span,
+    .leaflet-control-zoom-out span {
+      color: transparent !important;
+      font-size: 0 !important;
+
+    }
+
+    /* Preview de 3 digitais - posicionado abaixo do botão centralizado */
+    #digitalPreview3 {
+      position: fixed;
+      left: 50%;
+      /* coloca acima do botão (que está top:95%), ajustar se necessário */
+      top: calc(95% - 110px);
+      /* ajusta a distância entre botão e preview */
+      transform: translateX(-50%);
+      z-index: 1490;
+      /* menor que o botão (1500) e menor que o panel (2000) */
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      max-width: 520px;
+      overflow: hidden;
+      transition: opacity 160ms ease, transform 160ms ease;
+      pointer-events: auto;
+      /* permite clicar nos tiles */
+    }
+
+    /* tile compacto para 3 items */
+    .digital3-tile {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: center;
+      background: #fff;
+      border-radius: 8px;
+      padding: 6px;
+      min-width: 100px;
+      cursor: pointer;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      text-align: center;
+    }
+
+    .digital3-tile img {
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #eee;
+    }
+
+    .digital3-tile .d3-name {
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 700;
+      font-family: var(--font-title);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 90px;
+    }
+
+    /* mobile: empilha e reduz */
+    @media (max-width: 480px) {
+      #digitalPreview3 {
+        top: calc(90% - 140px);
+        gap: 6px;
+        padding: 6px;
+        max-width: 92%;
+      }
+
+      .digital3-tile {
+        min-width: 80px;
+      }
+
+      .digital3-tile .d3-name {
+        font-size: 11px;
+        width: 72px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="search-box">
+    <input id="searchInput" type="text" placeholder="🔍 Pesquisar organizações..." />
+    <ul id="searchResults"></ul>
+  </div>
+
+  <!-- Botão Digitais -->
+  <button id="digitalBtn" title="Ver Associações Digitais">
+    <img src="icons_filter/iconDigital.svg" alt="Associações Digitais" class="icon-svg"></button>
+
+
+
+  <!-- Painel com lista de Digitais -->
+  <div id="digitalPanel">
+    <h3> Associações Digitais</h3>
+    <ul id="digitalList"></ul>
+  </div>
+
+  <!-- Preview com 3 digitais (abaixo do botão centralizado) -->
+  <div id="digitalPreview3" aria-hidden="false" role="list"></div>
+
+
+
+  <div id="map"></div>
+
+  <!-- Filters bottom-left -->
+  <div id="filterPanel" class="filter-panel" aria-hidden="false"></div>
+
+  <!-- Botão para mostrar filtros -->
+  <button id="toggleFilterBtn" title="Mostrar Filtros">☰</button>
+
+
+  <!-- SIDE PANEL -->
+  <aside id="sidePanel" class="side-panel" aria-hidden="true">
+    <div class="panel-header">
+      <button id="closePanel" class="panel-close" title="Fechar">✕</button>
+      <img id="panelImg" src="" alt="Imagem" />
+      <div class="panel-name" id="panelName">Nome</div>
+      <div class="panel-cat" id="panelCat">Categoria</div>
+      <div class="media-row" id="panelMedia"></div>
+    </div>
+    <div class="panel-about">
+      <div>
+        <div class="section-about-title">Sobre</div>
+        <div class="about" id="panelAbout">Proposito</div>
+      </div>
+    </div>
+
+    <div class="panel-body" id="panelBody">
+      <div>
+        <div class="section-title">Morada</div>
+        <div class="info-row">
+          <div class="info-icon">
+            <img src="icons_list/iconAddress.svg" alt="Morada" class="icon-svg">
+          </div>
+          <div class="info-text" id="panelAddress">Endereço completo</div>
+        </div>
+
+        <div class="section-title">Telefone</div>
+        <div class="info-row">
+          <div class="info-icon">
+            <img src="icons_list/iconCall.svg" alt="Telefone" class="icon-svg">
+          </div>
+          <div class="info-text" id="panelPhone">+351 ...</div>
+        </div>
+
+        <div class="section-title">Email</div>
+        <div class="info-row">
+          <div class="info-icon">
+            <img src="icons_list/iconEmail.svg" alt="Email" class="icon-svg">
+          </div>
+          <div class="info-text" id="panelEmail">email@exemplo.pt</div>
+        </div>
+
+        <div class="section-title">Website</div>
+        <div class="info-row">
+          <div class="info-icon">
+            <img src="icons_list/iconWebsite.svg" alt="Website" class="icon-svg">
+          </div>
+          <div class="info-text" id="panelWebsite">https://...</div>
+        </div>
+
+        <div class="info-row">
+
+          <div class="static-activities">
+            Atividades: exposições, oficinas, congressos e eventos....
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // === Botão para mostrar/esconder filtros ===
+    const toggleFilterBtn = document.getElementById('toggleFilterBtn');
+    const filterPanel = document.getElementById('filterPanel');
+
+    toggleFilterBtn.addEventListener('click', () => {
+      if (filterPanel.style.display === 'flex' || filterPanel.style.display === '') {
+        filterPanel.style.display = 'none';
+      } else {
+        filterPanel.style.display = 'flex';
+      }
+    });
+
+    // Fechar painel de filtros ao clicar fora
+    document.addEventListener('click', (e) => {
+      if (
+        filterPanel.style.display === 'flex' &&
+        !filterPanel.contains(e.target) &&
+        e.target !== toggleFilterBtn
+      ) {
+        filterPanel.style.display = 'none';
+      }
+    });
+
+    // === CARREGAR DATA.JSON ===
+    fetch('data.json').then(r => r.json()).then(data => {
+      const todos = Array.isArray(data) ? data : [];
+
+      const fisicas = todos.filter(d => (d.type || '').toLowerCase() === 'fisica' && d.address && d.address.latitude && d.address.longitude);
+      const digitais = todos.filter(d => (d.type || '').toLowerCase() === 'digital');
+      const pesquisaveis = [...fisicas, ...digitais];
+
+      // === MAPA ===
+      const map = L.map('map').setView([38.72, -9.18], 12);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+
+      // === Side Panel ===
+      const sidePanel = document.getElementById('sidePanel');
+      const closePanelBtn = document.getElementById('closePanel');
+      const panelImg = document.getElementById('panelImg');
+      const panelName = document.getElementById('panelName');
+      const panelCat = document.getElementById('panelCat');
+      const panelMedia = document.getElementById('panelMedia');
+      const panelAbout = document.getElementById('panelAbout');
+      const panelAddress = document.getElementById('panelAddress');
+      const panelPhone = document.getElementById('panelPhone');
+      const panelEmail = document.getElementById('panelEmail');
+      const panelWebsite = document.getElementById('panelWebsite');
+
+      function gerarPopupHTML(o) {
+        const thumb = o.img
+          ? `<img src="${o.img}" alt="${(o.nome || '')}" style="width:48px;height:48px;object-fit:cover;border-radius:50%;border:none;" />`
+          : '';
+        return `<div class="mini-popup" style="display:flex;align-items:center;gap:10px;">
+        ${thumb}
+        <div class="m-title" style="color:var(--accent);font-weight:700;font-size:15px;">
+          ${o.nome || ''}
+        </div>
+      </div>`;
+      }
+
+      function openPanelFor(o) {
+        if (o.img) {
+          panelImg.src = o.img;
+          panelImg.style.display = 'block';
+        } else {
+          panelImg.src = '';
+          panelImg.style.display = 'none';
+        }
+
+        panelName.textContent = o.nome || '-';
+
+        const categoriaMap = {
+          'grupo': 'Grupo',
+          'coletivo_cultural': 'Coletivo Cultural',
+          'associacao': 'Associação',
+          'empresa_social': 'Empresa Social',
+          'outros': 'Outros'
+        };
+        panelCat.textContent = categoriaMap[o.categoria?.toLowerCase()] || (o.categoria || '-');
+
+        panelAbout.textContent = o.proposito || o.description || o.sobre || 'Sem descrição disponível.';
+
+        // Morada
+        if (o.address && (o.address.latitude && o.address.longitude)) {
+          const lat = o.address.latitude;
+          const lon = o.address.longitude;
+          const addr = o.address.fullAddress || 'Abrir no Google Maps';
+          panelAddress.innerHTML = `<a href="https://www.google.com/maps?q=${lat},${lon}" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none">${addr}</a>`;
+        } else if (o.address && o.address.fullAddress) {
+          const addr = o.address.fullAddress;
+          const query = encodeURIComponent(addr);
+          panelAddress.innerHTML = `<a href="https://www.google.com/maps/search/?api=1&query=${query}" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none">${addr}</a>`;
+        } else {
+          panelAddress.textContent = 'Não possui morada física.';
+        }
+
+        // Telefone
+        panelPhone.innerHTML = o.telefone
+          ? `<a href="tel:${o.telefone}" style="color:var(--muted); text-decoration:none">${o.telefone}</a>`
+          : 'Não possui telefone.';
+
+        // Email
+        panelEmail.innerHTML = o.eMail
+          ? `<a href="mailto:${o.eMail}" style="color:var(--muted); text-decoration:none">${o.eMail}</a>`
+          : 'Não possui email.';
+
+        // Website
+        panelWebsite.innerHTML = o.website
+          ? `<a href="${o.website}" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none">${o.website}</a>`
+          : 'Não possui website.';
+
+        // Redes sociais
+        panelMedia.innerHTML = '';
+        const links = o.mediaLinks || {};
+        const icons = {
+          twitter: 'icons_list/Twitter.svg',
+          youtube: 'icons_list/Youtube.svg',
+          instagram: 'icons_list/Instagram.svg',
+          linkedin: 'icons_list/Linkedin.svg',
+          thread: 'icons_list/Thread.svg',
+          facebook: 'icons_list/Facebook.svg',
+          tiktok: 'icons_list/Tiktok.svg'
+        };
+
+        Object.entries(links).forEach(([key, url]) => {
+          if (url) {
+            const a = document.createElement('a');
+            a.href = url;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            const img = document.createElement('img');
+            img.src = icons[key];
+            img.alt = key;
+            img.style.width = '24px';
+            img.style.height = '24px';
+            img.style.objectFit = 'contain';
+            a.appendChild(img);
+            panelMedia.appendChild(a);
+          }
+        });
+
+        sidePanel.classList.add('open');
+        sidePanel.setAttribute('aria-hidden', 'false');
+      }
+
+      function closePanel() {
+        sidePanel.classList.remove('open');
+        sidePanel.setAttribute('aria-hidden', 'true');
+      }
+      closePanelBtn.addEventListener('click', closePanel);
+
+      // === MARCADORES NO MAPA ===
+      const categorias = {};
+      fisicas.forEach(o => {
+        const cat = o.categoria || 'Outros';
+        if (!categorias[cat]) categorias[cat] = [];
+        categorias[cat].push(o);
+      });
+
+      const layers = {};
+      const allMarkers = [];
+
+      Object.entries(categorias).forEach(([cat, orgs]) => {
+        const layer = L.layerGroup();
+        orgs.forEach(o => {
+          const lat = parseFloat(o.address.latitude), lon = parseFloat(o.address.longitude);
+          if (isNaN(lat) || isNaN(lon)) return;
+          const marker = L.marker([lat, lon], {
+            icon: L.icon({
+              iconUrl: `icons/${cat}.svg`,
+              iconSize: [44, 44],
+              iconAnchor: [22, 22],
+              popupAnchor: [0, -22]
+            })
+          });
+          marker.bindPopup(gerarPopupHTML(o), { closeButton: false, offset: [0, -8] });
+
+          marker.on('click', () => {
+            marker.openPopup();
+            openPanelFor(o);
+            map.panTo([lat, lon], { animate: true });
+          });
+
+          marker.addTo(layer);
+          marker.orgData = o;
+          allMarkers.push(marker);
+        });
+
+        layers[cat] = layer;
+        layer.addTo(map);
+      });
+
+      // === FILTROS ===
+      const filterPanelElem = document.getElementById('filterPanel');
+
+      Object.keys(layers).forEach(cat => {
+        const btn = document.createElement('div');
+        btn.className = 'filter-item active';
+
+        const iconUrl = `icons_filter/${cat}.svg`;
+        const iconImg = document.createElement('img');
+        iconImg.src = iconUrl;
+        iconImg.alt = cat;
+        iconImg.style.width = '60px';
+        iconImg.style.height = '60px';
+        iconImg.style.objectFit = 'contain';
+        btn.appendChild(iconImg);
+
+        const categoryName = document.createElement('span');
+        categoryName.textContent = cat;
+        categoryName.style.display = 'none';
+        btn.appendChild(categoryName);
+
+        btn.addEventListener('click', () => {
+          if (map.hasLayer(layers[cat])) {
+            map.removeLayer(layers[cat]);
+            btn.classList.remove('active');
+          } else {
+            map.addLayer(layers[cat]);
+            btn.classList.add('active');
+          }
+        });
+
+        filterPanelElem.appendChild(btn);
+      });
+
+      // === Alternar todos ===
+      const controlsDiv = document.createElement('div');
+      controlsDiv.className = 'filter-controls';
+      const toggleBtn = document.createElement('button');
+      toggleBtn.className = 'toggle-all';
+      toggleBtn.textContent = 'Ocultar';
+      let allVisible = true;
+
+      toggleBtn.addEventListener('click', () => {
+        allVisible = !allVisible;
+        toggleBtn.textContent = allVisible ? 'Ocultar ' : 'Mostrar';
+
+        Object.entries(layers).forEach(([cat, layer]) => {
+          const btn = Array.from(filterPanelElem.children).find(el => el.textContent === cat);
+          if (allVisible) {
+            map.addLayer(layer);
+            btn.classList.add('active');
+          } else {
+            map.removeLayer(layer);
+            btn.classList.remove('active');
+          }
+        });
+      });
+
+      controlsDiv.appendChild(toggleBtn);
+      filterPanelElem.appendChild(controlsDiv);
+
+      // ============================================================
+      // === 🔥 LÓGICA COMPLETA DO DIGITAL BTN (RESTAURADA) 🔥 ===
+      // ============================================================
+
+      const digitalBtn = document.getElementById('digitalBtn');
+      const digitalPanel = document.getElementById('digitalPanel');
+      const digitalList = document.getElementById('digitalList');
+
+      // Abrir / Fechar painel
+      digitalBtn.addEventListener('click', () => {
+        digitalPanel.classList.toggle('open');
+      });
+
+      // Preencher lista digital
+      function preencherDigitais() {
+        digitalList.innerHTML = '';
+
+        if (!digitais.length) {
+          digitalList.innerHTML = `<li>Nenhuma organização digital encontrada.</li>`;
+          return;
+        }
+
+        digitais.forEach(o => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+          <img src="${o.img || 'https://via.placeholder.com/44'}" alt="">
+          <div>
+            <div style="font-weight:700;color:var(--accent)">${o.nome}</div>
+            <div style="font-size:12px;color:var(--muted)">${o.categoria || 'Digital'}</div>
+          </div>
+        `;
+
+          li.addEventListener('click', () => {
+            digitalPanel.classList.remove('open');
+            openPanelFor(o);
+          });
+
+          digitalList.appendChild(li);
+        });
+      }
+
+      preencherDigitais();
+
+      // ===== Preview seguro de 3 digitais (colocar dentro do .then, depois de preencherDigitais()) =====
+      (function () {
+        const previewEl = document.getElementById('digitalPreview3');
+        if (!previewEl) return; // nada a fazer se elemento não existir
+
+        function pickRandom(arr, n) {
+          const copy = Array.isArray(arr) ? [...arr] : [];
+          const out = [];
+          while (out.length < n && copy.length) {
+            const i = Math.floor(Math.random() * copy.length);
+            out.push(copy.splice(i, 1)[0]);
+          }
+          return out;
+        }
+
+        function render3Preview() {
+          previewEl.innerHTML = '';
+
+          if (!digitais || !digitais.length) {
+            previewEl.style.display = 'none';
+            return;
+          }
+
+          const picks = pickRandom(digitais, 3);
+          picks.forEach(o => {
+            const tile = document.createElement('div');
+            tile.className = 'digital3-tile';
+            tile.title = o.nome || 'Sem nome';
+            tile.innerHTML = `
+        <img src="${o.img || 'https://via.placeholder.com/56'}" alt="${(o.nome || '')}" />
+        <div class="d3-name">${o.nome || 'Sem nome'}</div>
+      `;
+            // Clique abre sidePanel com detalhe; NÃO altera o estado do digitalPanel (listagem permanece independente)
+            tile.addEventListener('click', (ev) => {
+              ev.stopPropagation();
+              // abre o painel lateral com detalhes
+              try { openPanelFor(o); } catch (err) { console.error(err); }
+              // opcional: centra mapa se tiver coords
+              if (o.address && o.address.latitude && o.address.longitude && typeof map !== 'undefined') {
+                const lat = parseFloat(o.address.latitude), lon = parseFloat(o.address.longitude);
+                if (!isNaN(lat) && !isNaN(lon)) map.setView([lat, lon], 14);
+              }
+            });
+
+            previewEl.appendChild(tile);
+          });
+
+          previewEl.style.display = 'flex';
+        }
+
+        // renderiza na carga
+        render3Preview();
+
+        // se quiseres novas 3 ao clicar no botão digital, re-renderiza sem tocar no listener original:
+        const digitalBtnEl = document.getElementById('digitalBtn');
+        if (digitalBtnEl) {
+          digitalBtnEl.addEventListener('click', () => {
+            // delay curto para deixar abrir painel principal se houver listener que toggleia
+            setTimeout(render3Preview, 120);
+          });
+        }
+
+        // impede que cliques fora fechem o side panel inesperadamente (opcional)
+        document.addEventListener('click', (e) => {
+          // se clicou fora do preview e fora do botão, não faz nada extra (manter comportamento existente)
+        });
+
+      })();
+
+
+      // --- INÍCIO: lógica de pesquisa (colar dentro do .then onde pesquisaveis está definido) ---
+      const searchInput = document.getElementById('searchInput');
+      const searchResults = document.getElementById('searchResults');
+
+      function normalizeText(t) {
+        return (t || '').toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+      }
+
+      function renderSearchResults(items) {
+        if (!items || !items.length) {
+          searchResults.innerHTML = '<li>Nenhum resultado</li>';
+          searchResults.style.display = 'block';
+          return;
+        }
+        searchResults.innerHTML = '';
+        items.slice(0, 20).forEach(o => { // limita a 20 resultados
+          const li = document.createElement('li');
+          li.innerHTML = `
+      <div class="result-item">
+        <img src="${o.img || 'https://via.placeholder.com/40'}" alt="">
+        <div>
+          <div class="m-title">${o.nome || 'Sem nome'}</div>
+          <div class="m-cat">${o.categoria || (o.type || '')}</div>
+        </div>
+      </div>
+    `;
+          li.addEventListener('click', () => {
+            // se for digital, abre painel; se for física, centra no mapa e abre painel
+            searchResults.style.display = 'none';
+            if (o.address && o.address.latitude && o.address.longitude) {
+              const lat = parseFloat(o.address.latitude), lon = parseFloat(o.address.longitude);
+              if (!isNaN(lat) && !isNaN(lon)) {
+                map.setView([lat, lon], 15, { animate: true });
+              }
+            }
+            openPanelFor(o);
+          });
+          searchResults.appendChild(li);
+        });
+        searchResults.style.display = 'block';
+      }
+
+      // Filtrar por texto, normalizando (remove acentos, case-insensitive)
+      function filterSearch(q) {
+        const nq = normalizeText(q);
+        if (!nq) {
+          searchResults.style.display = 'none';
+          return;
+        }
+        const results = pesquisaveis.filter(o => {
+          const hay = [
+            o.nome,
+            o.categoria,
+            o.proposito,
+            o.description,
+            o.sobre,
+            o.address && o.address.fullAddress,
+            o.eMail,
+            o.website
+          ].join(' ');
+          return normalizeText(hay).includes(nq);
+        });
+        renderSearchResults(results);
+      }
+
+      // debounce simples para melhorar UX
+      let searchTimeout = null;
+      searchInput.addEventListener('input', (e) => {
+        clearTimeout(searchTimeout);
+        const q = e.target.value;
+        searchTimeout = setTimeout(() => filterSearch(q), 180);
+      });
+
+      // fechar resultados ao clicar fora
+      document.addEventListener('click', (ev) => {
+        if (!document.querySelector('.search-box').contains(ev.target)) {
+          searchResults.style.display = 'none';
+        }
+      });
+
+      // permitir tecla ESC para fechar e ENTER para selecionar primeiro
+      searchInput.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape') {
+          searchResults.style.display = 'none';
+          searchInput.blur();
+        } else if (ev.key === 'Enter') {
+          const first = searchResults.querySelector('li');
+          if (first) first.click();
+        }
+      });
+
+      // Ajustes visuais se preciso (garante que fica por cima)
+      searchResults.style.zIndex = 1600;
+      searchResults.style.maxHeight = '360px';
+      searchResults.style.overflowY = 'auto';
+      // --- FIM: lógica de pesquisa ---
+
+
+    }).catch(err => {
+      console.error('Erro a carregar data.json', err);
+      alert('Erro a carregar data.json — ver console.');
+    });
+  </script>
+
+
+
+</body>
+
+</html>
