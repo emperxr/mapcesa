@@ -941,7 +941,7 @@
       function gerarPopupHTML(o) {
         const thumb = o.img
           ? `<img src="${o.img}" alt="${(o.nome || '')}"
-               style="width:48px;height:48px;object-fit:cover;border-radius:50%;border:none;" />`
+               style="width:48px;height:48px;object-fit:cover;border-radius:10%;border:none;" />`
           : '';
         return `<div class="mini-popup" style="display:flex;align-items:center;gap:10px;">
           ${thumb}
