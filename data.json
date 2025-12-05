@@ -6,7 +6,7 @@
     "nome": "Associação Dos Africanos Do Concelho De Vila Franca De Xira (AACVFX)",
     "identificacao": "Povos originários",
     "categoria": "associacao",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "geral.aacvfx@hotmail.com",
     "telefone": "219 520 360",
     "website": "https://associativismo.cm-vfxira.pt/index.php",
@@ -30,7 +30,8 @@
       "parish": "Vialonga",
       "fullAddress": "Rua António José da Silva, Torre 10 - Loja Esq, 2625-642 Vialonga, Vila Franca de Xira, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Dos-Africanos-Do-Concelho-De-Vila-Franca-De-Xira-AACVFX.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Dos-Africanos-Do-Concelho-De-Vila-Franca-De-Xira-AACVFX.jpg",
+    "sobre": "A Associação dos Africanos do Concelho de Vila Franca de Xira foi criada em 2000, para promover uma maior integração da comunidade africana residente no município, estendendo o seu apoio a toda a população imigrante aí radicada. Além de ajudar na defesa da dignidade de cada cidadão, aproxima, através do convívio cultural e social, africanos de diferentes origens e estabelece pontes entre estes e os portugueses."
   },
   {
     "id": 2,
@@ -39,7 +40,7 @@
     "nome": "Associação de Apoio aos Estudantes Africanos e Comunidades (AAEAC)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "aaeac2000@hotmail.com",
     "telefone": "21 8522695",
     "website": "https://aaeacomunidades.wordpress.com/about/",
@@ -64,7 +65,8 @@
       "parish": "Olivais",
       "fullAddress": "Rua Azinhaga da Alagueza, Lote X, Cave Dt., Olivais Velho, 1800-005 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Apoio-aos-Estudantes-Africanos-e-Comunidades-AAEAC.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Apoio-aos-Estudantes-Africanos-e-Comunidades-AAEAC.jpg",
+    "sobre": "Fundada em 1999, a Associação de Apoio aos Estudantes Africanos e Comunidades tem como missão contribuir para a valorização da formação científica, profissional e cultural dos estudantes africanos a frequentar instituições de ensino em Portugal, facilitando a sua integração. O trabalho passa pela colaboração com entidades públicas e privadas, na promoção de estágios, e no incentivo ao regresso dos jovens aos países de origem."
   },
   {
     "id": 3,
@@ -73,7 +75,7 @@
     "nome": "Associação de Apoio à Comunidade dos Países com Língua Oficial Portuguesa (AAGA)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Audiovisual; Promoção cultural;",
+    "subCategoria": "audiovisual; promocao_cultural",
     "eMail": "aaga.portugal@gmail.com / amixsilva@hotmail.com  ",
     "telefone": "966 234 640 / 218 068 326",
     "website": "https://www.cm-seixal.pt/associacao/associacao-de-apoio-aos-paises-de-lingua-portuguesa-aaga",
@@ -98,7 +100,8 @@
       "parish": "Seixal, Arrentela e Aldeia de Paio Pires",
       "fullAddress": "Rua Quinta Nossa Senhora do Monte Sião, Nº 1, Torre da Marinha, 2840-597 Seixal, Setúbal, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Apoio-a-Comunidade-dos-Paises-com-Lingua-Oficial-Portuguesa-AAGA.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Apoio-a-Comunidade-dos-Paises-com-Lingua-Oficial-Portuguesa-AAGA.jpg",
+    "sobre": "A Associação de Apoio à Comunidade dos Países com Língua Oficial Portuguesa (AAGA) existe desde 2012, com o propósito de promover a integração social da Comunidade migrante oriunda de países que partilham o português como idioma. Destaca-se no apoio na área da formação profissional e psicossocial, e na divulgação das culturas dos seus associados, celebrando a multiculturalidade presente no município."
   },
   {
     "id": 4,
@@ -107,7 +110,7 @@
     "nome": "Associação de Filhos e Amigos da Ilha de Jeta - Nucleo de Portugal (AFAIJE)",
     "identificacao": "Descendentes",
     "categoria": "associacao",
-    "subCategoria": "Teatro; Dança; Promoção cultural;",
+    "subCategoria": "teatro; danca; promocao_cultural",
     "eMail": "afaijeportugal@sapo.pt",
     "telefone": "214 681 330 / 968 801 863 / 965 877 774",
     "website": "https://afaijeportugal.blogs.sapo.pt/",
@@ -132,7 +135,8 @@
       "parish": "Cascais e Estoril",
       "fullAddress": "Centro Comercial da Grande Galiza, Loja 62, R. Sacadura Cabral 62, 2765-349 Cascais, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Filhos-e-Amigos-da-Ilha-de-Jeta-Nucleo-de-Portugal-AFAIJE.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Filhos-e-Amigos-da-Ilha-de-Jeta-Nucleo-de-Portugal-AFAIJE.jpg",
+    "sobre": "Reconhecida como ONG desde 1999, a Associação de Filhos e Amigos da Ilha de Jeta - Núcleo de Portugal (AFAIJE) propõe-se apoiar, acompanhar e impulsionar a comunidade guineense e seus amigos, intervém junto das comunidades imigrantes nos âmbitos social, de saúde, educação e cidadania no concelho de Cascais. Nesse sentido, procura estratégias inovadoras e economicamente sustentáveis."
   },
   {
     "id": 5,
@@ -141,7 +145,7 @@
     "nome": "Associação de Solidariadade social Alto Cova da Moura (ASSACM)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Música; Gastronomia; Promoção cultural;",
+    "subCategoria": "musica; gastronomia; promocao_cultural",
     "eMail": " direcao.assacm@gmail.com ",
     "telefone": "214 905 144 912 944 445",
     "website": "https://assacm.wixsite.com/assacm/about1-c1x1t",
@@ -166,7 +170,8 @@
       "parish": "Alfragide",
       "fullAddress": "Rua do Vale 17, 2610-232 Alfragide, Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Solidariadade-social-Alto-Cova-da-Moura-ASSACM.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Solidariadade-social-Alto-Cova-da-Moura-ASSACM.jpg",
+    "sobre": "A Associação de Solidariedade social Alto Cova da Moura (ASSACM) orienta a sua intervenção para o desenvolvimento local, e promoção da qualidade de vida da comunidade. Desde 1980 no terreno, funciona como Centro Comunitário, e pretende responder às necessidades da população, prestando apoio, nomeadamente jurídico e psicológico, e dinamizando atividades, por exemplo na área do desporto e cultura."
   },
   {
     "id": 6,
@@ -175,7 +180,7 @@
     "nome": "Associação Bué Fixe",
     "identificacao": "Descendentes",
     "categoria": "associacao",
-    "subCategoria": "Educação & formação;",
+    "subCategoria": "educacao",
     "eMail": "grupobuefixe@gmail.com",
     "telefone": "933 250 983",
     "mediaLinks": {
@@ -200,7 +205,8 @@
       "parish": "Venteira",
       "fullAddress": "Rua António Correia 1C, 2.º Esq., 2700-067 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Bue-Fixe.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Bue-Fixe.jpg",
+    "sobre": "A Associação Bué Fixe nasceu em 2003 com a prioridade de apoiar jovens que vivem em contextos de vulnerabilidade, e que estejam sujeitos a um maior risco de infeção por IST/VIH/sida, bem como mais expostos a situações de exclusão social causadas pelo desemprego e discriminação. A sua intervenção foca-se na dinamização de programas sociais construídos com e para a juventude que pretende beneficiar."
   },
   {
     "id": 7,
@@ -209,11 +215,10 @@
     "nome": "Associação Caboverdeana de Almada (Cretcheu)",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Promoção cultural;",
+    "subCategoria": "promocao_cultural",
     "eMail": "cretcheu.gaiscv@gmail.com",
     "telefone": "214 022 501 / 21 156 03 18",
     "mediaLinks": {
-      "website": "https://www.facebook.com/CretcheuAlmada/",
       "facebook": "https://www.facebook.com/CretcheuAlmada/",
       "instagram": "",
       "linkedin": "",
@@ -234,7 +239,8 @@
       "parish": "Almada, Cova da Piedade, Pragal e Cacilhas",
       "fullAddress": "Rua Moçambique Nº 1, Cave B, 2805-207 Cova da Piedade, Almada, Setúbal, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Caboverdeana-de-Almada-Cretcheu.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Caboverdeana-de-Almada-Cretcheu.jpg",
+    "sobre": "A Associação Caboverdeana de Almada, também conhecida por Cretcheu, atua desde 1974 com o intuito de desenvolver laços de solidariedade entre os cabo-verdianos residentes em Portugal, e expandir essas ligações a outros cidadãos, promovendo uma melhor integração dos associados na sociedade lusa. Tem uma intervenção orientada para a dinamização de atividades socioculturais e recreativas."
   },
   {
     "id": 8,
@@ -243,7 +249,7 @@
     "nome": "Associação de Moradores do Bairro da Cruz Vermelha do Lumiar",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Desporto; Gastronomia; Promoção cultural; Educação & formação;",
+    "subCategoria": "desporto; gastronomia; promocao_cultural; educacao",
     "eMail": "ambcvl@gmail.com  ",
     "telefone": "214 087 288 / 217 588 913",
     "website": "https://ambcvlumiar.wordpress.com/",
@@ -268,7 +274,8 @@
       "parish": "Lumiar",
       "fullAddress": "Rua Maria Carlota 8, Loja A/B, 1750-179 Lisboa, Lumiar, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Moradores-do-Bairro-da-Cruz-Vermelha-do-Lumiar.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Moradores-do-Bairro-da-Cruz-Vermelha-do-Lumiar.jpg",
+    "sobre": "A Associação de Moradores do Bairro da Cruz Vermelha do Lumiar (AMBCVL) foi fundada em 1994, e tem como objetivo criar e melhorar as infraestruturas de apoio direto à comunidade residente, nomeadamente através de uma boa iluminação pública, segurança policial eficaz, criação de recintos desportivos e zonas verdes, e resolução de problemas de habitação, visando o aperfeiçoamento social, cultural, físico e cívico. "
   },
   {
     "id": 9,
@@ -277,7 +284,7 @@
     "nome": "Associação Luso Caboverdeana de Sintra (ACAS Sintra)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Audiovisual;",
+    "subCategoria": "audiovisual",
     "eMail": "acas.sintra@gmail.com",
     "telefone": "+351 219 203 371 / 932 118 880",
     "website": "https://acassintra.com/",
@@ -302,7 +309,8 @@
       "parish": "Rio de Mouro",
       "fullAddress": "Rua João XXIII, Bloco A (Traseiras), 2635-184 Rio de Mouro, Sintra, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Luso-Caboverdeana-de-Sintra-ACAS-Sintra.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Luso-Caboverdeana-de-Sintra-ACAS-Sintra.jpg",
+    "sobre": "A Associação Luso Caboverdeana de Sintra (ACAS Sintra) iniciou atividade em 2002, afirmando-se como uma entidade de intervenção comunitária que acolhe, capacita e integra populações vulneráveis do concelho de Sintra, atuando nas freguesias de Rio de Mouro e Algueirão Mem Martins. Com foco na inclusão social, dispõe de gabinete de apoio ao imigrante, e promove ações em várias áreas, como educação e emprego."
   },
   {
     "id": 10,
@@ -311,7 +319,7 @@
     "nome": "Associação MirAtiva",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Desporto; Promoção cultural; Educação & formação;",
+    "subCategoria": "desporto; promocao_cultural; educacao",
     "eMail": "a.mirativa@gmail.com",
     "telefone": "965 879 645",
     "website": "https://casaldamiranet.wixsite.com/casaldamira/associao-mirativa",
@@ -336,7 +344,8 @@
       "parish": "Encosta do Sol",
       "fullAddress": "Casal da Mira, 2650-435 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-MirAtiva.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-MirAtiva.jpg",
+    "sobre": "Criada em 2014, a Associação MirAtiva está focada no fortalecimento comunitário e aumento da qualidade de vida da população do Casal da Mira, bem como na construção de uma imagem positiva do bairro. Nesse sentido, estimula relações de vizinhança e aposta numa programação intercultural e intergeracional de atividades, que passam pela promoção da saúde, lazer e bem-estar físico e mental. "
   },
   {
     "id": 11,
@@ -345,7 +354,7 @@
     "nome": "Associação Moinho da Juventude",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Audiovisual; Música; Teatro; Dança; Desporto; Gastronomia; Promoção cultural; Educação & formação;",
+    "subCategoria": "audiovisual; musica; teatro; danca; desporto; gastronomia; promocao_cultural; educacao",
     "eMail": "ir-acmj@moinhodajuventude.pt / dir-acmj@moinhodajuventude.pt",
     "telefone": "21 497 1070",
     "website": "http://moinhodajuventude.pt/?fbclid=IwAR3FFUv-_tUVsD2Ytvhow4WiOMeHRDndcYTf_BgSu8rvB4B4vnGKRzKEr6g",
@@ -370,7 +379,8 @@
       "parish": "Alfragide",
       "fullAddress": "Rua Travessa do Outeiro 1, Buraca, 2610-244 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Moinho-da-Juventude.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Moinho-da-Juventude.jpg",
+    "sobre": "A Associação Cultural Moinho da Juventude desenvolve a sua intervenção comunitária desde 1985, envolvendo crianças, jovens, adultos e idosos em torno do lema “Um outro mundo é possível se a gente quiser”. Orientada para a criação de sinergias que estimulam a partilha de competências e a responsabilidade pessoal e grupal, dinamiza atividades a nível socioeducativo, sociocultural, socioprofissional, prestando informação e apoio jurídico e social. "
   },
   {
     "id": 12,
@@ -379,7 +389,7 @@
     "nome": "Associação Moinho em Movimento",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Dança; Gastronomia; Promoção cultural; Educação & formação;",
+    "subCategoria": "danca; gastronomia; promocao_cultural; educacao",
     "eMail": " moinhoemmovimento@gmail.com",
     "telefone": "926 739 559",
     "website": "https://www.facebook.com/pg/Associa%C3%A7%C3%A3o-Moinho-Em-Movimento-1515550875365134/about/?ref=page_internal",
@@ -404,7 +414,8 @@
       "parish": "Porto Salvo",
       "fullAddress": "Rua Abel Fontoura da Costa, 2740-211 Porto Salvo, Oeiras, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Moinho-em-Movimento.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Moinho-em-Movimento.jpg",
+    "sobre": "Iniciada em 2009 por um grupo de jovens, a Associação Moinho em Movimento visa promover a integração dos moradores do Bairro Municipal Moinho das Rolas. Trabalha no apoio a crianças, jovens, famílias e idosos, destacando-se pela criação de equipamentos sociais que beneficiam a comunidade, e pela organização de atividades culturais, recreativas e desportivas. Sempre como foco em soluções e na dignificação humana."
   },
   {
     "id": 13,
@@ -413,7 +424,7 @@
     "nome": "Associação Olho Vivo",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Educação & formação;",
+    "subCategoria": "educacao",
     "eMail": "olhovivo.geral@gmail.com",
     "telefone": "214 353 810 / 912344079 / 968008371",
     "website": "http://www.olho-vivo.org/",
@@ -438,7 +449,8 @@
       "parish": "Queluz e Belas",
       "fullAddress": "Centro Comercial de Queluz, Avenida António Ennes 31, 2º Andar, 2745-067 Queluz, Sintra, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Olho-Vivo.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Olho-Vivo.jpg",
+    "sobre": "Fundada em 1988, a Olho Vivo - Associação para a Defesa do Património, Ambiente e Direitos Humanos trabalha na defesa dos direitos das pessoas migrantes, promovendo mais justiça social e ambiental. Entre as suas atividades destaca-se o funcionamento do Centro Local de Apoio à Integração de Migrantes, bem como a oferta de projectos promotores da inclusão social de crianças e jovens, onde se inclui o apoio ao estudo."
   },
   {
     "id": 14,
@@ -447,7 +459,7 @@
     "nome": "Associação Passa Sabi",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Audiovisual; Gastronomia; Promoção cultural; Educação & formação;",
+    "subCategoria": "audiovisual; gastronomia; promocao_cultural; educacao",
     "eMail": "geral@passasabi.pt",
     "telefone": "965 586 893",
     "website": "www.passasabi.pt",
@@ -472,7 +484,8 @@
       "parish": "Avenidas Novas",
       "fullAddress": "Rua Marciano Henriques da Silva, 1600-878 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Passa-Sabi.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Passa-Sabi.jpg",
+    "sobre": "A Associação Passa Sabi surgiu em 2014, assumindo um papel cada vez mais ativo na mobilização, dinamização e valorização da comunidade do Bairro do Rêgo, em Lisboa. O seu programa de atividades inclui propostas culturais, sociais, económicas e desportivas, envolvendo crianças, jovens e população adulta, como forma de promover relações inter-geracionais, ao mesmo tempo que preserva e divulga a cultura dos residentes."
   },
   {
     "id": 15,
@@ -481,7 +494,7 @@
     "nome": "Casa Seis - Associação para o Desenvolvimento Comunitário",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "casaseis@gmail.com",
     "telefone": "Telf: 219 188 431 Telm: 965 863 828",
     "website": "http://casaseis-casa6.blogspot.pt/?fbclid=IwAR3irOHNmKOZAPHFlVahEXuwUODISTCZ-RNO7oN7fLWJvBdg_a37QsqeurY",
@@ -506,7 +519,8 @@
       "parish": "Cacém e São Marcos",
       "fullAddress": "Rua da Fundação D. Pedro IV 6, Loja, Mira Sintra, 2735-592 Sintra, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Casa-Seis-Associacao-para-o-Desenvolvimento-Comunitario.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Casa-Seis-Associacao-para-o-Desenvolvimento-Comunitario.jpg",
+    "sobre": "A Casa Seis - Associação para o Desenvolvimento Comunitário tem sede em Mira Sintra, onde se propõe melhorar a qualidade de vida e as condições de inserção social da população local e arredores. Criada em 2000, atua segundo princípios de Educação para a Cidadania Ativa, permitindo que a população possa participar na sociedade como protagonista, exercendo plenamente os seus direitos."
   },
   {
     "id": 16,
@@ -515,7 +529,7 @@
     "nome": "Centro Cultural Africano (CCA)",
     "identificacao": "Sem informação",
     "categoria": "musica",
-    "subCategoria": "Música; Teatro; Gastronomia; Promoção cultural;",
+    "subCategoria": "musica; teatro; gastronomia; promocao_cultural",
     "eMail": "cca.setubal@gmail.com / ccafricano@yahoo.com.br",
     "telefone": "965 768 978",
     "website": "https://www.facebook.com/cca.setubal/",
@@ -540,7 +554,8 @@
       "parish": "São Sebastião",
       "fullAddress": "Avenida da Bela Vista, Loja 19, C 31, 2910-421 Setúbal, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Centro-Cultural-de-Cabo-Verde.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Centro-Cultural-de-Cabo-Verde.jpg",
+    "sobre": "Desde 1997 a intervir no Bairro da Bela Vista, em Setúbal, o Centro Cultural Africano (CCA) trabalha com crianças de todas as idades, e dá apoio a grupos mais desfavorecidos. Para além das atividades destinadas ao público infantil, onde se inclui o apoio ao estudo, e propostas lúdicas, o espaço dinamiza programação cultural, como por exemplo, exposições, tendo também experiência na orientação e procura de emprego."
   },
   {
     "id": 17,
@@ -549,7 +564,7 @@
     "nome": "Cooperativa de Desenvolvimento Social (COOPERACTIVA)",
     "identificacao": "Sem informação",
     "categoria": "cooperacao",
-    "subCategoria": "Educação & formação;",
+    "subCategoria": "educacao",
     "eMail": "cooperactiva@gmail.com",
     "telefone": "214 715 015",
     "website": "https://www.cooperactiva.info/",
@@ -574,7 +589,8 @@
       "parish": "Alfragide",
       "fullAddress": "Rua das Minas 11, Loja A, 2610-111 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Cooperativa-de-Desenvolvimento-Social-COOPERACTIVA.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Cooperativa-de-Desenvolvimento-Social-COOPERACTIVA.jpg",
+    "sobre": "A CooperActiva - Cooperativa de Desenvolvimento Social intervém na defesa dos direitos de grupos em contextos de exclusão social, lutando contra a discriminação e violência. A partilha é um dos valores que promove, mediante a implementação de processos de tomada de decisão participada e democrática, sendo que a sua origem, em 2002, resulta do trabalho desenvolvido pelo CESIS – Centro de Estudos para a Intervenção Social."
   },
   {
     "id": 18,
@@ -583,7 +599,7 @@
     "nome": "Associação Fundo de Apoio Social de Cabo-Verdianos em Portugal (FASCP)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Música; Dança;",
+    "subCategoria": "musica; danca",
     "eMail": "presidente@fascp.org / secretariado@fascp.org / fascp.vice@gmail.com",
     "telefone": "966717398 / 963672937  963672937",
     "website": "http://fascp.weebly.com/",
@@ -608,7 +624,8 @@
       "parish": "Quinta do Conde",
       "fullAddress": "Rua Manuel de Arriaga, Lt-1342, 3º Dto, 2975-329 Quinta do Conde, Sesimbra, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Fundo-de-Apoio-Social-de-Cabo-Verdianos-em-Portugal-FASCP.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Fundo-de-Apoio-Social-de-Cabo-Verdianos-em-Portugal-FASCP.jpg",
+    "sobre": "Fundada em 2003, a Associação Fundo de Apoio Social de Cabo-Verdianos em Portugal (FASCP) dirige a sua intervenção para ações de cooperação, desenvolvimento e ajuda humanitária, incluindo o apoio a doentes e reclusos, a capitação de jovens e a organização de conferências. Os objetivos passam também pela consolidação de laços entre a comunidade cabo-verdiana em Portugal e demais população."
   },
   {
     "id": 19,
@@ -617,7 +634,7 @@
     "nome": "Associação de Mulheres Negras, Africanas e Afrodescendentes em Portugal (FEMAFRO)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "femafroportugal@gmail.com",
     "telefone": "",
     "website": "https://femafro.pt/",
@@ -642,7 +659,8 @@
       "parish": "Marvila",
       "fullAddress": "Rua Amigos de Lisboa, 1950-307 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Mulheres-Negras-Africanas-e-Afrodescendentes-em-Portugal-FEMAFRO.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Mulheres-Negras-Africanas-e-Afrodescendentes-em-Portugal-FEMAFRO.jpg",
+    "sobre": "A Associação de Mulheres Negras, Africanas e Afrodescendentes em Portugal (FEMAFRO) orienta a sua intervenção para a defesa e promoção de direitos das mulheres negras, africanas e afro descendentes em Portugal, procurando a eliminação de todas as formas de discriminação étnico-racial e de género, com base nos princípios éticos da igualdade, justiça social e laboral, promoção da qualidade de vida e respeito dos direitos humanos."
   },
   {
     "id": 20,
@@ -651,7 +669,7 @@
     "nome": "GHAM-ATHÉ - Associação dos Filhos e Amigos da Ilha das Galinhas",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Gastronomia; Promoção cultural;",
+    "subCategoria": "gastronomia; promocao_cultural",
     "eMail": "associaga@hotmail.com",
     "telefone": 963150050,
     "website": "https://www.cm-barreiro.pt/eventos/vii-festival-encontros/",
@@ -676,7 +694,8 @@
       "parish": "Santo António da Charneca",
       "fullAddress": "Rua 4, Cidade Sol, 2835-509 Santo António da Charneca, Barreiro, Portugal"
     },
-    "img": ""
+    "img": "",
+    "sobre": "A Associação dos Filhos e Amigos da Ilha das Galinhas - GHAM-ATHÉ é uma das entidades reconhecidas em Diário da República como associação representativa dos imigrantes e seus descendentes, estatuto atribuído em 2013. Baseada no município do Barreiro, tem atuado como parceira da autarquia, nomeadamente na realização do Festival Encontro de Culturas - Cores, Sons, Sabores e Saberes."
   },
   {
     "id": 21,
@@ -685,7 +704,7 @@
     "nome": "Girassol Solidário - Associação de Apoio aos Doentes Evacuados de Cabo Verde",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Gastronomia; Promoção cultural;",
+    "subCategoria": "gastronomia; promocao_cultural",
     "eMail": "girassolsolidario@sapo.pt / geral@girassolsolidario.pt",
     "telefone": "960 484 137",
     "website": "https://girassolsolidario.blogs.sapo.pt/25559.html",
@@ -710,7 +729,8 @@
       "parish": "Misericórdia",
       "fullAddress": "Rua da Silva 1, 1200-649 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Girassol-Solidario-Associacao-de-Apoio-aos-Doentes-Evacuados-de-Cabo-Verde.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Girassol-Solidario-Associacao-de-Apoio-aos-Doentes-Evacuados-de-Cabo-Verde.jpg",
+    "sobre": "Formalizada em 2007, a Girassol Solidário - Associação de Apoio aos Doentes Evacuados de Cabo Verde atua junto dos cidadãos evacuados de Cabo Verde, residentes na Área Metropolitana de Lisboa, contribuindo para uma melhor integração dos doentes no território nacional, com ações de carácter humanitário, psicossocial, lúdico, e de mediação intercultural. Apoia cerca de 100 pessoas, entre doentes e acompanhantes."
   },
   {
     "id": 22,
@@ -719,7 +739,7 @@
     "nome": "GTO LX - Grupo Teatro do Oprimido Lisboa",
     "identificacao": "Sem informação",
     "categoria": "grupo_teatral",
-    "subCategoria": "Teatro;",
+    "subCategoria": "teatro",
     "eMail": "geral@gtolx.org / comunicacao@gtolx.org",
     "telefone": "964006715 | 968 474 613",
     "website": "https://www.gtolx.org/",
@@ -744,7 +764,8 @@
       "parish": "Misericórdia",
       "fullAddress": "Travessa do Corpo Santo 21, 2º andar, 1200-131 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/GTO-LX-Grupo-Teatro-do-Oprimido-Lisboa.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/GTO-LX-Grupo-Teatro-do-Oprimido-Lisboa.jpg",
+    "sobre": "GTO LX - Grupo Teatro do Oprimido Lisboa atua desde 2003, embora a formalização como associação remonte a 2005. Apresenta-se como uma organização empenhada em estimular a participação ativa e consciente das pessoas na construção da sociedade, desenvolvendo projetos de intervenção comunitária, através das técnicas de Teatro do/a Oprimido/a. Tem como visão uma sociedade mais justa e plural."
   },
   {
     "id": 23,
@@ -753,7 +774,7 @@
     "nome": "Instituto da Mulher Negra em Portugal (INMUNE)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "instituto",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": " institutodamulhernegra.pt@gmail.com",
     "telefone": "",
     "website": "https://www.facebook.com/INMUNE.PORTUGAL/",
@@ -778,7 +799,8 @@
       "parish": "Misericórdia",
       "fullAddress": "Rua da Paz 58, 1200-319 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Instituto-da-Mulher-Negra-em-Portugal-INMUNE.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Instituto-da-Mulher-Negra-em-Portugal-INMUNE.jpg",
+    "sobre": "Estabelecido em 2018, o Instituto da Mulher Negra em Portugal (INMUNE) apresenta-se como uma entidade feminista interseccional e anti-racista, que combate a invisibilização e o silenciamento das mulheres negras, africanas e afrodescendentes na História e no presente. Apartidário e solidário, promove a igualdade de direitos, a paridade e a justiça social, bem como empoderamento e a participação social e política feminina."
   },
   {
     "id": 24,
@@ -787,7 +809,7 @@
     "nome": "Liáfrica - Liga dos Africanos e Amigos de África",
     "identificacao": "Povos originários e descendentes",
     "categoria": "liga",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "liafrica@sapo.pt / rogeritopacheco@gmail.com / mceu_aleixo@iol.pt / eduarda.ferronha@hotmail.com",
     "telefone": "919501377 / 917510698 / 927779293 / 964517795 / 965051780",
     "website": "https://www.facebook.com/ligaafricana/?locale=pt_PT",
@@ -812,7 +834,8 @@
       "parish": "Marvila",
       "fullAddress": "Rua Botelho de Vasconcelos, Lote 564, 1º Piso B, Bairro do Condado - Chelas, 1950-045 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Liafrica-Liga-dos-Africanos-e-Amigos-de-Africa.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Liafrica-Liga-dos-Africanos-e-Amigos-de-Africa.jpg",
+    "sobre": "A Liáfrica - Liga dos Africanos e Amigos de África vem desenvolvendo, desde a fundação, em 1999, atividades de formação, nomeadamente nos domínios da Educação para a Saúde, na Área Social e na Área Científica. A sua intervenção tem incluído também conferências e congressos, tanto em Portugal como em Angola, contribuindo para a integração da comunidade africana, em particular angolana, em território luso."
   },
   {
     "id": 25,
@@ -821,7 +844,7 @@
     "nome": "Plataforma para o Desenvolvimento da Mulher Africana (Padema)",
     "identificacao": "Povos originários",
     "categoria": "centro",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "pademamulher@gmail.com",
     "telefone": "966 826 061",
     "website": "https://www.facebook.com/PademaOficial/",
@@ -846,7 +869,8 @@
       "parish": "São João das Lampas e Terrugem",
       "fullAddress": "Estrada do Concelho 31, 2705-572 Terrugem, Sintra, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Plataforma-para-o-Desenvolvimento-da-Mulher-Africana-Padema.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Plataforma-para-o-Desenvolvimento-da-Mulher-Africana-Padema.jpg",
+    "sobre": "Criada em 2016, a Plataforma para o Desenvolvimento da Mulher Africana (Padema) desenvolve a sua intervenção centrada na Mulher Africana diaspórica, nos seus valores culturais e identitários, com vista à sua afirmação na sociedade, tendo em conta a igualdade de género e de oportunidades. Tem-se destacado na organização na FAMA – Feira da Mulher Africana, que celebra, anualmente, o Dia da Mulher Africana."
   },
   {
     "id": 26,
@@ -855,7 +879,7 @@
     "nome": "Pendão em Movimento - Espaço Comunitário",
     "identificacao": "Sem informação",
     "categoria": "espaco_comunitario",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "pendao.em.movimento@gmail.com",
     "telefone": "965 775 888 / 912 409 405",
     "website": "https://pendaoemmovimento.wordpress.com/?fbclid=IwAR2NTm_f9e2biC2vjGmLktT9caaWJL1G9J7bWDAzcPjCxbBLOlaSxYdv-wo",
@@ -880,7 +904,8 @@
       "parish": "Queluz e Belas",
       "fullAddress": "Praceta do Miradouro, 2745-215 Queluz, Sintra, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Pendao-em-Movimento-Espaco-Comunitario.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Pendao-em-Movimento-Espaco-Comunitario.jpg",
+    "sobre": "O Pendão em Movimento - Espaço Comunitário agrega, nas suas instalações, moradores, grupos informais, associações de base local, uma área de empreendedorismo social e instituições privadas de solidariedade social. A primeira reunião de cogestão do espaço, para abertura de portas, aconteceu em 2015, ano marcado também pela organização da 1.ª edição do Festival Pendão em Movimento, realizado em 2016."
   },
   {
     "id": 27,
@@ -889,7 +914,7 @@
     "nome": "Pombal XXI - Associação dos Moradores Bairros Pombal / Bento Jesus Caraça",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "pombalxxi@sapo.pt / geralpombal21@gmail.com",
     "telefone": "936 363 212 / 912 210 993",
     "website": "https://www.facebook.com/pages/category/Community/Pombal-XXI-Associa%C3%A7%C3%A3o-dos-Moradores-Bairros-Pombal-Bento-Jesus-Cara%C3%A7a-180096185377617/",
@@ -914,7 +939,8 @@
       "parish": "Oeiras e São Julião da Barra, Paço de Arcos e Caxias",
       "fullAddress": "Largo Francisco Lucas Pires 9, 3º direito, 2780-158 Oeiras, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Pombal-XXI-Associacao-dos-Moradores-Bairros-Pombal-Bento-Jesus-Caraca.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Pombal-XXI-Associacao-dos-Moradores-Bairros-Pombal-Bento-Jesus-Caraca.jpg",
+    "sobre": "A Pombal XXI - Associação dos Moradores Bairros Pombal / Bento Jesus Caraça nasceu em 2005 como entidade sem fins lucrativos, que tem como objeto social a promoção da emancipação social, cívica e cultural das comunidades dos Bairros do Pombal e Bento de Jesus Caraça, situados no concelho de Oeiras. A sua intervenção está focada em quatro áreas: educação, desporto, ação social e cultura. "
   },
   {
     "id": 28,
@@ -923,7 +949,7 @@
     "nome": "Associação de Promotores de Saúde, Ambiente e Desenvolvimento Sócio-Cultural (PROSAUDESC)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "prosaudesc@hotmail.com / prosaudesc@gmail.com / daramo.projecto@gmail.com ",
     "telefone": "935 459 365 / 309900247 / 214074867 / 219410359",
     "website": "http://www.prosaudesc.pt/Portoguese/index.html",
@@ -948,7 +974,8 @@
       "parish": "Santa Clara",
       "fullAddress": "Rua Arnaldo Assis Pacheco, Lote 1A, Zona B, 1750-395 Ameixoeira, Lisboa, Portugal"
     },
-    "img": ""
+    "img": "",
+    "sobre": "Criada em 2012, a PROSAUDESC- Associação de Promotores de Saúde, Ambiente e Desenvolvimento Sócio-Cultural tem como missão a promoção da saúde e a ação social, voltada para o empoderamento das comunidades, através de iniciativas e projetos que visam informar, mobilizar, envolver e apoiar os mais desfavorecidos e vulneráveis, promovendo a integração e inclusão sociais, bem como estilos de vida mais saudáveis."
   },
   {
     "id": 29,
@@ -957,7 +984,7 @@
     "nome": "Associação Cultural e Juvenil Batoto Yetu Portugal (BYP)",
     "identificacao": "Descendentes",
     "categoria": "associacao",
-    "subCategoria": "Música; Teatro; Dança; Gastronomia; Promoção cultural; Educação & formação;",
+    "subCategoria": "musica; teatro; danca; gastronomia; promocao_cultural; educacao",
     "eMail": "batotoyetu@gmail.com",
     "telefone": "214 460 729 / 210 145 023",
     "website": "https://batotoyetu.pt/pt/",
@@ -982,7 +1009,8 @@
       "parish": "Marvila",
       "fullAddress": "Rua António Gedeão, Lote B3, 1950-151 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Cultural-e-Juvenil-Batoto-Yetu-Portugal-BYP.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Cultural-e-Juvenil-Batoto-Yetu-Portugal-BYP.jpg",
+    "sobre": "Fundada em 1996, a Associação Cultural e Juvenil Batoto Yetu Portugal (BYP) atua no domínio da educação não formal, particularmente na área da inclusão através da arte e iniciativas de organização comunitária e promoção da cidadania. O seu trabalho incide sobretudo sobre jovens e crianças interessados na cultura africana e provenientes de meios económicos menos favorecidos, estimulando as suas competências de liderança."
   },
   {
     "id": 30,
@@ -991,7 +1019,7 @@
     "nome": "Associação Cavaleiros de São Brás",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Dança; Gastronomia; Promoção cultural; Educação & formação;",
+    "subCategoria": "danca; gastronomia; promocao_cultural; educacao",
     "eMail": "associacaocavaleirosdesaobras@gmail.com / bobaeduca@gmail.com",
     "telefone": "",
     "website": "https://www.facebook.com/cavaleirossaobras/",
@@ -1016,7 +1044,8 @@
       "parish": "São Brás",
       "fullAddress": "Rua Jacinto Baptista 4B, Casal de São Brás, 2700-792 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Cavaleiros-de-Sao-Bras.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Cavaleiros-de-Sao-Bras.jpg",
+    "sobre": "No terreno desde 2005, a Associação Cavaleiros de São Brás está sediada no Casal da Boba, bairro de habitação municipal do concelho da Amadora, onde vem promovendo eventos locais, como o Boba Li Ke Terra. Esta celebração assinala, em Julho, o Dia da Independência de Cabo Verde, e pretende criar sinergias e ações de formação para trazer grupos de teatro, de investigação, intervenção para a cidadania e ativismo ao bairro. "
   },
   {
     "id": 31,
@@ -1025,7 +1054,7 @@
     "nome": "Grupo EducAR – Plataforma de Educadores Antirracistas",
     "identificacao": "Povos originários e descendentes",
     "categoria": "grupo",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "grpeducar@gmail.com",
     "telefone": "913050053 (Danilo)",
     "website": "https://grpeducar.wordpress.com/",
@@ -1050,7 +1079,8 @@
       "parish": "Alvalade",
       "fullAddress": "Teatro Maria Matos, Rua Bulhão Pato 1B, 1700-081 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Grupo-EducAR-–-Plataforma-de-Educadores-Antirracistas.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Grupo-EducAR-–-Plataforma-de-Educadores-Antirracistas.jpg",
+    "sobre": "O Grupo EducAR é um grupo multidisciplinar de educadores antirracistas que pensam e fazem uma Educação Antirracista desde 2018 com o objetivo de (re)pensar a Educação dentro e fora da escola com um compromisso antirracista a partir da realidade social portuguesa e do seu diálogo com experiências africanas, afrobrasileiras e afrodiaspórica. Trabalhamos com diferentes abordagens temáticas e formatos para diferentes espaços e públicos tendo a arte-educação como meio e fim neste processo – individual e coletivo; uno e contínuo – de construção da consciência histórica, de prevenção/combate ao comportamento/pensamento racista e discriminatório e de garantia dos direitos humanos ao exercitar compromissos nacionais e internacionais."
   },
   {
     "id": 32,
@@ -1059,7 +1089,7 @@
     "nome": "Rede Afrolink - Comunidade de Profissionais Africanos e Afrodescendentes",
     "identificacao": "Povos originários e descendentes",
     "categoria": "rede",
-    "subCategoria": "Audiovisual; Música; Promoção cultural; Educação & formação;",
+    "subCategoria": "audiovisual; musica; promocao_cultural; educacao",
     "eMail": "geral@afrolink.pt",
     "telefone": "",
     "website": "https://afrolink.pt/",
@@ -1084,7 +1114,8 @@
       "parish": "Belém",
       "fullAddress": "Rua Virgínia Quaresma, 1400-361 Belém, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Rede-Afrolink-Comunidade-de-Profissionais-Africanos-e-Afrodescendentes.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Rede-Afrolink-Comunidade-de-Profissionais-Africanos-e-Afrodescendentes.jpg",
+    "sobre": "Afrolink é uma organização dedicada ao avanço dos profissionais e empresários negros, e à promoção da diversidade na sociedade portuguesa. Através de uma abordagem abrangente que combina a dinamização comunitária, a informação independente e a oferta de serviços de consultoria, criámos uma rede de apoio única para enfrentar desafios sistémicos e propor ideias para uma sociedade mais equitativa."
   },
   {
     "id": 33,
@@ -1093,7 +1124,7 @@
     "nome": "Teatro GRIOT",
     "identificacao": "Povos originários e descendentes",
     "categoria": "grupo_teatral",
-    "subCategoria": "Teatro;",
+    "subCategoria": "teatro",
     "eMail": "teatrogriot.producao@gmail.com",
     "telefone": "933 067 810",
     "website": "https://www.teatrogriot.com/",
@@ -1118,7 +1149,8 @@
       "parish": "Misericórdia",
       "fullAddress": "Polo Cultural Gaivotas Boavista, Rua das Gaivotas 8, sala F, 1200-202 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Teatro-GRIOT.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Teatro-GRIOT.jpg",
+    "sobre": "O Teatro GRIOT, sediado na cidade de Lisboa, é uma companhia de teatro cuja programação se organiza a partir de reflexões implicadas na construção e problematização da Europa contemporânea, decorrentes das vivências dos seus membros, que se relacionam com a condição do que é ser artista, negro, imigrante e estrangeiro."
   },
   {
     "id": 34,
@@ -1127,7 +1159,7 @@
     "nome": "Associação Torre Amiga",
     "identificacao": "Povos originários",
     "categoria": "associacao",
-    "subCategoria": "Desporto;",
+    "subCategoria": "desporto",
     "eMail": "associacaotorreamiga@gmail.com",
     "telefone": 963111930,
     "website": "atorreamiga.weebly.com",
@@ -1152,7 +1184,8 @@
       "parish": "Camarate, Unhos e Apelação",
       "fullAddress": "Bairro da Torre 8, 2680-093 Camarate, Loures, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Torre-Amiga.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Torre-Amiga.jpg",
+    "sobre": "Fundada a Fevereiro de 2013, para defender os direitos da comunidade da Torre (residente e realojada), e apoiar na colmatação das suas necessidades, incluindo o acesso a serviços básicos (água, electricidade, saneamento, higiene urbana) a habitação digna e adequada, a apoios sociais e solidários (alimentação, produtos de higiene e limpeza, móveis e electrodomésticos, tarifas sociais, passe social, saúde, emprego, etc.), aos serviços de integração de imigrantes, e actividades lúdicas e culturais diversas. "
   },
   {
     "id": 35,
@@ -1161,7 +1194,7 @@
     "nome": "União Negra das Artes",
     "identificacao": "Descendentes",
     "categoria": "uniao",
-    "subCategoria": "Promoção cultural;",
+    "subCategoria": "promocao_cultural",
     "eMail": "geral@uniaonegradasartes.pt / comunicacao@uniaonegradasartes.pt",
     "telefone": "",
     "website": "https://uniaonegradasartes.pt/",
@@ -1186,7 +1219,8 @@
       "parish": "Arroios",
       "fullAddress": "Rua Augusto José Vieira 19, 1º, 1170-031 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Uniao-Negra-das-Artes.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Uniao-Negra-das-Artes.jpg",
+    "sobre": "A União NEGRA das Artes é uma iniciativa que surge no âmbito da luta antirracista e da afirmação de negritude em Portugal, com ênfase nas diversas manifestações e debates recentes em torno da reivindicação de direitos humanos, da descolonização do conhecimento e da valorização do legado artístico-cultural protagonizado por pessoas negras.\nA constituição da associação,em Abril de 2021, resulta da necessidade de criação de uma estrutura que defenda os interesses específicos da negritude no setor cultural, atendendo às continuidades históricas do racismo colonial que mantém assimetrias profundas e dificultam a criação, fruição, acesso, produção, programação e, consequentemente, a representatividade negra no sector artístico em Portugal.\nOs principais objetivos são a promoção, elevação e fortalecimento da representatividade negra no campo artístico português, assim como o reconhecimento e a valorização do património imaterial da população negra em Portugal."
   },
   {
     "id": 36,
@@ -1195,7 +1229,7 @@
     "nome": "Associação Juvenil Nasce e Renasce",
     "identificacao": "Descendentes",
     "categoria": "associacao",
-    "subCategoria": "Gastronomia; Promoção cultural; Educação & formação;",
+    "subCategoria": "gastronomia; promocao_cultural; educacao",
     "eMail": "nasce.renasce@gmail.com",
     "telefone": "",
     "website": "https://nascerenasceblog.wordpress.com/",
@@ -1220,7 +1254,8 @@
       "parish": "São Brás",
       "fullAddress": "Rua Mário Viegas, Casal de São Brás, 2610-248 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Juvenil-Nasce-e-Renasce.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Juvenil-Nasce-e-Renasce.jpg",
+    "sobre": "Associação sem fins lucrativos que tem como objetivos a promoção cultural, a formação e a aprendizagem, o desporto e atividades recreativas, o apoio social e a inter-ajuda, direcionados a uma população maioritariamente jovem."
   },
   {
     "id": 37,
@@ -1229,7 +1264,7 @@
     "nome": "SOS Racismo - Associação",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Audiovisual; Promoção cultural; Educação & formação;",
+    "subCategoria": "audiovisual; promocao_cultural; educacao",
     "eMail": "sosracismo@gmail.com",
     "telefone": "",
     "website": "https://www.sosracismo.pt/",
@@ -1254,7 +1289,8 @@
       "parish": "Avenidas Novas",
       "fullAddress": "Rua Dom Luís de Noronha 17, 1º Esq., 1050-071 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/SOS-Racismo-Associacao.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/SOS-Racismo-Associacao.jpg",
+    "sobre": "Fundado a 10 de dezembro de 1990, o SOS Racismo nasceu como resposta ao crescimento do racismo e da xenofobia em Portugal.\nO movimento surgiu na sequência do assassinato de José Carvalho, militante de esquerda, por um grupo de skinheads, em dezembro de 1989. \nDesde então, o SOS Racismo tem sido uma voz ativa na denúncia da discriminação racial, promovendo a igualdade e os direitos humanos.\nA associação desenvolve atividades políticas, culturais e pedagógicas, dando visibilidade às lutas contra o racismo e apoiando as comunidades racializadas em Portugal."
   },
   {
     "id": 38,
@@ -1263,7 +1299,7 @@
     "nome": "Bazofo & Dentu Zona",
     "identificacao": "Povos originários e descendentes",
     "categoria": "centro",
-    "subCategoria": "Audiovisual; Promoção cultural; Educação & formação;",
+    "subCategoria": "audiovisual; promocao_cultural; educacao",
     "eMail": "INFO@BAZOFO.COM",
     "telefone": "968 857 400",
     "website": "https://www.bazofo.com/pt/",
@@ -1288,7 +1324,8 @@
       "parish": "Águas Livres",
       "fullAddress": "Rua 8 de Dezembro, Cova da Moura, 2600-640 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Bazofo-Dentu-Zona.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Bazofo-Dentu-Zona.jpg",
+    "sobre": "A Bazofo faz parte de um projecto cultural chamado Dentu Zona. Dentu Zona é uma expressão do crioulo cabo-verdiano que significa “no bairro”.\nO projecto envolve actividades como mercados na Cova da Moura para mostrar talento local, eventos culturais e de música para dar espaço para artistas da comunidade.\nTodas as actividades têm como objectivo empoderar a comunidade da Cova da Moura e outras comunidades marginalizadas."
   },
   {
     "id": 39,
@@ -1297,7 +1334,7 @@
     "nome": "Môn Zuntú - Associação de Promoção da Comunidade Santomense",
     "identificacao": "",
     "categoria": "associacao",
-    "subCategoria": "Música; Promoção cultural; Educação & formação;",
+    "subCategoria": "musica; promocao_cultural; educacao",
     "eMail": "associacaomonzuntu@gmail.com",
     "telefone": "96 273 21 16 | 92 648 26 28",
     "website": "https://www.cm-almada.pt/intervencao-social/solidariedade-e-inclusao/migrantes",
@@ -1322,7 +1359,8 @@
       "parish": "Almada, Cova da Piedade, Pragal e Cacilhas",
       "fullAddress": "Largo Filinto Elísio 13, 6ºC, Cova da Piedade, 2805-145 Almada, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Mon-Zuntu-Associacao-de-Promocao-da-Comunidade-Santomense.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Mon-Zuntu-Associacao-de-Promocao-da-Comunidade-Santomense.jpg",
+    "sobre": "Associação de pendor recreativo de promoção cultural e artística da cultura e comunidade Santomense."
   },
   {
     "id": 40,
@@ -1331,7 +1369,7 @@
     "nome": "Batukadeiras Bandeirinhas Da Boba",
     "identificacao": "Povos originários",
     "categoria": "musica",
-    "subCategoria": "Música; Dança;",
+    "subCategoria": "musica; danca",
     "eMail": "",
     "telefone": "",
     "website": "https://www.facebook.com/Batukadeiras-Bandeirinhas-Da-Boba-112020316903371/",
@@ -1356,7 +1394,8 @@
       "parish": "Mina de Água",
       "fullAddress": "Casal de São Brás, 2610-109 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Batukadeiras-Bandeirinhas-Da-Boba.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Batukadeiras-Bandeirinhas-Da-Boba.jpg",
+    "sobre": "Grupo feminino de batuque da Boba."
   },
   {
     "id": 41,
@@ -1365,7 +1404,7 @@
     "nome": "Associação para a Cooperação Internacional com África (Acácia)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Educação & formação;",
+    "subCategoria": "educacao",
     "eMail": "acacia.associacao@gmail.com ",
     "telefone": "969057039 | 935933459 ",
     "website": "http://acacia-associacao.blogspot.com/",
@@ -1390,7 +1429,8 @@
       "parish": "Cascais e Estoril",
       "fullAddress": "Travessa do Robalo 22A, Torre, 2750-204 Cascais, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-para-a-Cooperacao-Internacional-com-Africa-Acacia.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-para-a-Cooperacao-Internacional-com-Africa-Acacia.jpg",
+    "sobre": "A ACÁCIA – Associação para a Cooperação Internacional com África é uma ONGD fundada legalmente em 2008 e reconhecida pelo IPAD em 2009, nascida de um sonho e de uma paixão comum por África. Têm como missão promover a valorização do indivíduo e contribuir para uma sociedade mais justa, desenvolvida e sustentável, de acordo com os princípios dos direitos humanos. Para isso, concebem, executam e apoiam projetos sociais, culturais, educativos, económicos e cívicos, tanto em Portugal como em países em desenvolvimento. Desenvolvem atividades de cooperação e educação para o desenvolvimento, formação profissional, promoção do desenvolvimento local, iniciativas para jovens, igualdade de género, ações culturais e de solidariedade, estabelecendo ainda protocolos de cooperação e produzindo estudos que reforçam a sua missão."
   },
   {
     "id": 42,
@@ -1399,7 +1439,7 @@
     "nome": "Solidariedade Imigrante, Associação para Defesa dos Direitos dos Imigrantes (SOLIM)",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "",
     "telefone": "",
     "website": "http://www.solimigrante.org/ ",
@@ -1424,7 +1464,8 @@
       "parish": "Santa Maria Maior",
       "fullAddress": "Rua dos Bacalhoeiros 4, 1º Andar, 1100-070 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Solidariedade-Imigrante-Associacao-para-Defesa-dos-Direitos-dos-Imigrantes-SOLIM.png.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Solidariedade-Imigrante-Associacao-para-Defesa-dos-Direitos-dos-Imigrantes-SOLIM.png.jpg",
+    "sobre": "A Solidariedade Imigrante é uma associação sem fins lucrativos, criada em 2001, que defende os direitos dos imigrantes em Portugal, promovendo a sua voz autónoma e independente. Trabalham para que todos possam exercer os seus direitos, independentemente da origem, religião, etnia ou género, lutando pela igualdade de direitos. Integram diversas redes nacionais e internacionais, como a Plataforma de Associações de Imigrantes e a Rede de Combate à Exclusão Social, e são promotores do Fórum Social Português. Sustentam-se através da autonomia financeira, valorizando a responsabilização dos próprios imigrantes que apoiam a associação através das suas quotas."
   },
   {
     "id": 43,
@@ -1433,7 +1474,7 @@
     "nome": "ASSOCIAÇÃO PARA A COOPERAÇÃO ENTRE OS POVOS (ACEP)",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Educação & formação;",
+    "subCategoria": "educacao",
     "eMail": "acep@acep.pt / info@acep.pt",
     "telefone": "T: +351 21 79 50 175 F: +351 21 79 50 176",
     "website": "www.acep.pt",
@@ -1458,7 +1499,8 @@
       "parish": "Avenidas Novas",
       "fullAddress": "Avenida Santos Dumont 57, 1050-202 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/ASSOCIACAO-PARA-A-COOPERACAO-ENTRE-OS-POVOS-ACEP.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/ASSOCIACAO-PARA-A-COOPERACAO-ENTRE-OS-POVOS-ACEP.jpg",
+    "sobre": "A ACEP - Associação para a Cooperação Entre os Povos, constituída no início da década de 90, define como objectivo da sua intervenção contribuir para um mundo mais equitativo e solidário, através da construção de laços de cooperação e de reforço mútuo, entre expressões de cidadania, em particular nos países de língua oficial portuguesa."
   },
   {
     "id": 44,
@@ -1467,7 +1509,7 @@
     "nome": "Associação Desportiva da Amadora",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Desporto;",
+    "subCategoria": "desporto",
     "eMail": " assdespamadora.geral@gmail.com",
     "telefone": "935 117 506",
     "website": "https://www.facebook.com/AssociacaoDesportivaAmadora",
@@ -1492,7 +1534,8 @@
       "parish": "Mina de Água",
       "fullAddress": "Praceta Padre Álvaro Proença 10, 2º Dto., 2700-631 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Desportiva-da-Amadora.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Desportiva-da-Amadora.jpg",
+    "sobre": "A Associação Desportiva da Amadora nasceu a 14 de março de 2014, com uma visão simples, mas poderosa: usar o futebol como uma ferramenta de desenvolvimento pessoal e social. Começámos com apenas 15 crianças no Ringue do Bairro da Boba, e hoje, com o nosso lar no Complexo Desportivo Municipal do Monte da Galega, somos uma referência na formação de jovens atletas, com mais de 260 crianças e jovens a praticar desporto."
   },
   {
     "id": 45,
@@ -1501,7 +1544,7 @@
     "nome": "Associação The One Zion",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Educação & formação;",
+    "subCategoria": "educacao",
     "eMail": "",
     "telefone": "960150964 / 939441083",
     "website": "https://www.facebook.com/Associa%C3%A7%C3%A3o-The-One-Zion-111933211374352",
@@ -1526,7 +1569,8 @@
       "parish": "Queluz e Belas",
       "fullAddress": "Rua dos Moinhos 23A, Pendão, 2745-108 Queluz, Sintra, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-The-One-Zion.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-The-One-Zion.jpg",
+    "sobre": "Associação de moradores/as residentes na zona do Pendão com o objectivo de promover respostas participadas para os jovens, e para todos os seus desafios sentidos no território. Pretende-se criar espaço para a energização e concretização das ideias emergidas, via momentos de participação e reflexão. Paralelamente, pretende-se proporcionar aos jovens, experiências diferenciadoras do seu quotidiano. Projeto será assente num espaço comunitário, em associações parceiras e na rua / espaços públicos que os jovens frequentam."
   },
   {
     "id": 46,
@@ -1535,7 +1579,7 @@
     "nome": "CAZAmbujal Associação Recreativa",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Audiovisual; Dança; Desporto; Educação & formação;",
+    "subCategoria": "audiovisual; danca; desporto; educacao",
     "eMail": "cazambujal.ar@gmail.com",
     "telefone": "",
     "website": "https://www.cazambujal.org/",
@@ -1560,7 +1604,8 @@
       "parish": "Alfragide",
       "fullAddress": "Rua das Mães D'Água 33, 2610-082 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/CAZAmbujal-Associacao-Recreativa.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/CAZAmbujal-Associacao-Recreativa.jpg",
+    "sobre": "A Associação CAZAmbujal é uma associação formada por jovens e jovens adultos do Bairro do Zambujal (Alfragide) que desde 2012 se unem na missão de “Juntos a transformar o mundo” eventos comunitários, desporto e dinamização cultural e artística."
   },
   {
     "id": 48,
@@ -1569,7 +1614,7 @@
     "nome": "SDM Mais Ação",
     "identificacao": "Sem informação",
     "categoria": "centro",
-    "subCategoria": "Audiovisual; Dança;  Promoção cultural; Educação & formação;",
+    "subCategoria": "audiovisual; danca; promocao_cultural; educacao",
     "eMail": "mais.acao@akdn.org",
     "telefone": "919 303 810",
     "website": "https://www.facebook.com/SerradasMinas.MaisAcao/",
@@ -1594,7 +1639,8 @@
       "parish": "Rio de Mouro",
       "fullAddress": "Mercado da Serra das Minas, Rua Vitorino Nemésio, 2635-444 Rio de Mouro, Sintra, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/SDM-Mais-Acao.png.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/SDM-Mais-Acao.png.jpg",
+    "sobre": "O SDM MAIS AÇÃO promove a criação cultural e artística na Serra de Minas."
   },
   {
     "id": 49,
@@ -1603,7 +1649,7 @@
     "nome": "KMT Associação Moreira Team",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Desporto;",
+    "subCategoria": "desporto",
     "eMail": "associacaomoreirateam@gmail.com",
     "telefone": "965 828 610",
     "website": "https://www.between.pt/projetos/moreira-team",
@@ -1628,7 +1674,8 @@
       "parish": "Oeiras e São Julião da Barra, Paço de Arcos e Caxias",
       "fullAddress": "Rua Instituto Conde de Agrolongo 43D, Loja, 2770-082 Paço de Arcos, Oeiras, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/KMT-Associacao-Moreira-Team.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/KMT-Associacao-Moreira-Team.jpg",
+    "sobre": "A KMT – Associação Moreira Team nasceu de um projeto iniciado em 2013 com o objetivo de ocupar e apoiar crianças, jovens e adultos através de um espaço seguro e positivo. Apostando na inclusão pelo desporto, especialmente através do Kickboxing, o projeto formalizou-se como associação em 2018, com forte envolvimento da comunidade. Em 2019, expandiram o impacto com o programa “Cidadania Ativa”, promovendo ações cívicas dedicadas ao bem comum e à responsabilidade coletiva."
   },
   {
     "id": 50,
@@ -1637,7 +1684,7 @@
     "nome": "Academia do Johnson",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Desporto; Educação & formação;",
+    "subCategoria": "desporto; educacao",
     "eMail": "academiadojohnson@gmail.com",
     "telefone": "+ 351 21037370",
     "website": "https://www.academiadojohnson.com/",
@@ -1662,7 +1709,8 @@
       "parish": "Águas Livres",
       "fullAddress": "Rua das Mães D'Água 31-A, Bairro do Zambujal, 2610-108 Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Academia-do-Johnson.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Academia-do-Johnson.jpg",
+    "sobre": "A Academia do Johnson acompanha crianças e jovens de meios familiares e sociais fragilizados, na intervenção e prevenção de situações de risco, através da promoção da educação e do desporto como ferramentas para melhorarem as suas vidas."
   },
   {
     "id": 51,
@@ -1671,7 +1719,7 @@
     "nome": "Associação de Moradores do PER 11",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Audiovisual; Música; Teatro; Dança; Desporto; Gastronomia; Promoção cultural; Educação & formação;",
+    "subCategoria": "audiovisual; musica; teatro; danca; desporto; gastronomia; promocao_cultural; educacao",
     "eMail": "",
     "telefone": "21 805 7602",
     "website": "https://www.facebook.com/per.onze.3388/?locale=pt_PT",
@@ -1696,7 +1744,8 @@
       "parish": "Santa Clara",
       "fullAddress": "Rua Raul Rego, Lote 8, 2ºB, 1750-424 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Moradores-do-PER-11.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-de-Moradores-do-PER-11.jpg",
+    "sobre": "A Associação de Moradores do PER11 é uma organização dedicada a promover o bem-estar da comunidade, fortalecendo relações, criando oportunidades e abrindo caminhos para uma participação ativa e inclusiva.\nTrabalha diariamente para dinamizar iniciativas educativas, culturais e sociais que valorizem cada residente, apoiem o desenvolvimento local e reforcem o sentido de pertença no bairro."
   },
   {
     "id": 52,
@@ -1705,7 +1754,7 @@
     "nome": "Solfraterno - Associação de Solidariedade Social de Oeiras",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Educação & formação;",
+    "subCategoria": "educacao",
     "eMail": "solfraterno.tiaceu@gmail.com",
     "telefone": "961 777 851",
     "website": "https://www.facebook.com/solfraternooeiras/",
@@ -1730,7 +1779,8 @@
       "parish": "Carnaxide e Queijas",
       "fullAddress": "Avenida Comendador Nunes Corrêa, Armazém 18, 2790-145 Carnaxide, Oeiras, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Solfraterno-Associacao-de-Solidariedade-Social-de-Oeiras.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Solfraterno-Associacao-de-Solidariedade-Social-de-Oeiras.jpg",
+    "sobre": "A Solfraterno é uma associação de solidariedade social e apoia famílias no combate à pobreza."
   },
   {
     "id": 53,
@@ -1739,7 +1789,7 @@
     "nome": "Capacitare - Consultoria e Negócios",
     "identificacao": "Sem informação",
     "categoria": "companhia",
-    "subCategoria": "Educação & formação;",
+    "subCategoria": "educacao",
     "eMail": "geral@capacitare.pt",
     "telefone": "965 667 303 / 218253507",
     "website": "https://www.capacitare.pt/",
@@ -1764,7 +1814,8 @@
       "parish": "Encosta do Sol",
       "fullAddress": "Rua Gonçalves Crespo, Lote 9C, Brandoa, 2650-241 Encosta do Sol, Amadora, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Capacitare-Consultoria-e-Negocios.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Capacitare-Consultoria-e-Negocios.jpg",
+    "sobre": "Disponibiliza soluções completas de serviços especializados em documentação de estrangeiros, capacitação de indivíduos/empreendedores e outros profissionais de front-office de empresas público-privadas ou da economia social, desde serviços de outsourcing para entidades que procurem contratar talento estrangeiro e querem que os seus profissionais estejam focados para a função a que foram contratados, reduzindo a rotatividade e as desigualdades de oportunidades"
   },
   {
     "id": 54,
@@ -1773,7 +1824,7 @@
     "nome": "Associação Jorge Pina",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Música; Desporto; Educação & formação;",
+    "subCategoria": "musica; desporto; educacao",
     "eMail": " jorgepina.associacao@gmail.com",
     "telefone": "968 831 368 / 922 236 529",
     "website": "https://www.associacaojorgepina.pt/",
@@ -1798,7 +1849,8 @@
       "parish": "Lumiar",
       "fullAddress": "Rua Frederico George 25, 1º Dto, 1600-468 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Jorge-Pina.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Jorge-Pina.jpg",
+    "sobre": "Em 2004, quando se preparava para o Campeonato do Mundo de Boxe, o pugilista Jorge Pina perdeu quase totalmente a visão.\nDesde então, o atleta quis “ser os braços, as mãos e as pernas da comunidade” e inspirar os jovens, criando a Associação Jorge Pina promovendo a transformação social através da prática de desporto."
   },
   {
     "id": 55,
@@ -1807,7 +1859,7 @@
     "nome": "Centro Cultural de Cabo Verde",
     "identificacao": "Povos originários e descendentes",
     "categoria": "centro",
-    "subCategoria": "Promoção cultural; Educação & formação;",
+    "subCategoria": "promocao_cultural; educacao",
     "eMail": "pt.cccv@gov.cv",
     "telefone": "21 018 7393",
     "website": "https://www.facebook.com/CCCV.PT#",
@@ -1832,7 +1884,8 @@
       "parish": "Estrela",
       "fullAddress": "Rua de São Bento 640, 1250-220 Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Centro-Cultural-de-Cabo-Verde.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Centro-Cultural-de-Cabo-Verde.jpg",
+    "sobre": "É uma instituição sem fins lucrativos, gerida pela Embaixada de Cabo Verde em Portugal e tem como missão a preservação e a divulgação da cultura cabo-verdiana."
   },
   {
     "id": 56,
@@ -1841,7 +1894,7 @@
     "nome": "Associação Tira-me da Rua",
     "identificacao": "Sem informação",
     "categoria": "associacao",
-    "subCategoria": "Dança; Desporto; Educação & Formação",
+    "subCategoria": "danca; desporto; educacao",
     "eMail": "info@tiramedarua.pt",
     "telefone": "+351 913 032 125 +351 960 469 182 +351 968 756 311",
     "website": "https://tiramedarua.pt/",
@@ -1866,7 +1919,8 @@
       "parish": "Póvoa de Santo Adrião e Olival Basto",
       "fullAddress": "Rua Marechal Craveiro Lopes, 2620-136 Póvoa de Santo Adrião, Odivelas, Lisboa, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Tira-me-da-Rua.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Associacao-Tira-me-da-Rua.jpg",
+    "sobre": "O projecto “Tira-me da Rua” Ubuntu surgiu em 2012 com o objectivo de afastar as crianças e jovens de más influências, através de uma ocupação nos seus tempos livres que lhes fornecesse as bases e as ferramentas necessárias para ascender de forma lícita e segura a um futuro melhor e a uma cidadania plena, através da prática da capoeira.\nO projecto evoluiu, tornou-se na ATR – Associação Tira-me da Rua.\nHoje, a ATR atende a cerca de 10% da população infanto-juvenil do Barruncho e conta também com crianças e jovens de todo o concelho, assim como atletas de Lisboa, Amadora e Cascais, reunindo mais de 70 associados."
   },
   {
     "id": 57,
@@ -1875,7 +1929,7 @@
     "nome": "AMUCIP",
     "identificacao": "Etnia Cigana",
     "categoria": "musica",
-    "subCategoria": "Audiovisual; Música; Teatro; Dança;Educação & formação;",
+    "subCategoria": "audiovisual; musica; teatro; danca; educacao",
     "eMail": "",
     "telefone": 926577057,
     "website": "https://www.facebook.com/amucip.amucip/",
@@ -1900,7 +1954,8 @@
       "parish": "Seixal, Arrentela e Aldeia de Paio Pires",
       "fullAddress": "Praceta Gregório Crispim Oliveira 2, 2840-358 Arrentela, Seixal, Setúbal, Portugal"
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/AMUCIP.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/AMUCIP.jpg",
+    "sobre": "Associação para o Desenvolvimento das Mulheres Ciganas Portuguesas, criada em 2000, trabalha com vários parceiros no Bairro procurando soluções para combater problemas como o absentismo escolar, que afeta desproporcionalmente as meninas de etnia cigana."
   },
   {
     "id": 1,
@@ -1909,7 +1964,7 @@
     "nome": "Djass - Associação de Afrodescendentes",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Associação",
+    "subCategoria": "",
     "eMail": "associacao.djass@gmail.com",
     "telefone": "",
     "website": "http://djass.pt/",
@@ -1934,7 +1989,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Djass-Associacao-de-Afrodescendentes.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Djass-Associacao-de-Afrodescendentes.jpg",
+    "sobre": "A Associação dos Africanos do Concelho de Vila Franca de Xira foi criada em 2000, para promover uma maior integração da comunidade africana residente no município, estendendo o seu apoio a toda a população imigrante aí radicada. Além de ajudar na defesa da dignidade de cada cidadão, aproxima, através do convívio cultural e social, africanos de diferentes origens e estabelece pontes entre estes e os portugueses."
   },
   {
     "id": 2,
@@ -1943,7 +1999,7 @@
     "nome": "Nêga Filmes e Produções Artísticas",
     "identificacao": "Povos originários",
     "categoria": "coletivo",
-    "subCategoria": "Coletivo cultural",
+    "subCategoria": "",
     "eMail": "negafilmesproducoes@gmail.com",
     "telefone": "917 148 235",
     "website": "",
@@ -1968,7 +2024,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Nega-Filmes-e-Producoes-Artisticas.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Nega-Filmes-e-Producoes-Artisticas.jpg",
+    "sobre": "Fundada em 1999, a Associação de Apoio aos Estudantes Africanos e Comunidades tem como missão contribuir para a valorização da formação científica, profissional e cultural dos estudantes africanos a frequentar instituições de ensino em Portugal, facilitando a sua integração. O trabalho passa pela colaboração com entidades públicas e privadas, na promoção de estágios, e no incentivo ao regresso dos jovens aos países de origem."
   },
   {
     "id": 3,
@@ -1977,7 +2034,7 @@
     "nome": "Plataforma Gueto",
     "identificacao": "Povos originários e descendentes",
     "categoria": "associacao",
-    "subCategoria": "Plataforma",
+    "subCategoria": "",
     "eMail": "guetoplataforma@gmail.com",
     "telefone": "",
     "website": "https://plataformagueto.wordpress.com/",
@@ -2002,7 +2059,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Plataforma-Gueto.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Plataforma-Gueto.jpg",
+    "sobre": "A Associação de Apoio à Comunidade dos Países com Língua Oficial Portuguesa (AAGA) existe desde 2012, com o propósito de promover a integração social da Comunidade migrante oriunda de países que partilham o português como idioma. Destaca-se no apoio na área da formação profissional e psicossocial, e na divulgação das culturas dos seus associados, celebrando a multiculturalidade presente no município."
   },
   {
     "id": 4,
@@ -2011,7 +2069,7 @@
     "nome": "Mulheres Negras Escurecidas",
     "identificacao": "Povos originários e descendentes",
     "categoria": "coletivo",
-    "subCategoria": "Coletivo",
+    "subCategoria": "",
     "eMail": "mn.escurecidas@gmail.com",
     "telefone": "",
     "website": "",
@@ -2036,7 +2094,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Mulheres-Negras-Escurecidas.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Mulheres-Negras-Escurecidas.jpg",
+    "sobre": "Reconhecida como ONG desde 1999, a Associação de Filhos e Amigos da Ilha de Jeta - Núcleo de Portugal (AFAIJE) propõe-se apoiar, acompanhar e impulsionar a comunidade guineense e seus amigos, intervém junto das comunidades imigrantes nos âmbitos social, de saúde, educação e cidadania no concelho de Cascais. Nesse sentido, procura estratégias inovadoras e economicamente sustentáveis."
   },
   {
     "id": 5,
@@ -2045,7 +2104,7 @@
     "nome": "Peles Negras Máscaras Negras - Teatro do Escurecimento",
     "identificacao": "Sem informação",
     "categoria": "grupo_teatral",
-    "subCategoria": "Grupo teatral",
+    "subCategoria": "",
     "eMail": "pelesnegrasmascarasnegras@gmail.com",
     "telefone": "",
     "website": "",
@@ -2070,7 +2129,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": ""
+    "img": "",
+    "sobre": "A Associação de Solidariedade social Alto Cova da Moura (ASSACM) orienta a sua intervenção para o desenvolvimento local, e promoção da qualidade de vida da comunidade. Desde 1980 no terreno, funciona como Centro Comunitário, e pretende responder às necessidades da população, prestando apoio, nomeadamente jurídico e psicológico, e dinamizando atividades, por exemplo na área do desporto e cultura."
   },
   {
     "id": 6,
@@ -2079,7 +2139,7 @@
     "nome": "Afrolis Associação Cultural",
     "identificacao": "Descendentes",
     "categoria": "associacao",
-    "subCategoria": "Associação",
+    "subCategoria": "",
     "eMail": "contato.afrolis@gmil.com",
     "telefone": "",
     "website": "https://afrolis.pt/",
@@ -2104,7 +2164,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Afrolis-Associacao-Cultural.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Afrolis-Associacao-Cultural.jpg",
+    "sobre": "A Associação Bué Fixe nasceu em 2003 com a prioridade de apoiar jovens que vivem em contextos de vulnerabilidade, e que estejam sujeitos a um maior risco de infeção por IST/VIH/sida, bem como mais expostos a situações de exclusão social causadas pelo desemprego e discriminação. A sua intervenção foca-se na dinamização de programas sociais construídos com e para a juventude que pretende beneficiar."
   },
   {
     "id": 7,
@@ -2113,7 +2174,7 @@
     "nome": "Frente Anti-Racista (FAR)",
     "identificacao": "Povos originários",
     "categoria": "frente",
-    "subCategoria": "Frente",
+    "subCategoria": "",
     "eMail": "frenteantiracista.pt@gmail.com",
     "telefone": "",
     "website": "",
@@ -2138,7 +2199,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Frente-Anti-Racista-FAR.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Frente-Anti-Racista-FAR.jpg",
+    "sobre": "A Associação Caboverdeana de Almada, também conhecida por Cretcheu, atua desde 1974 com o intuito de desenvolver laços de solidariedade entre os cabo-verdianos residentes em Portugal, e expandir essas ligações a outros cidadãos, promovendo uma melhor integração dos associados na sociedade lusa. Tem uma intervenção orientada para a dinamização de atividades socioculturais e recreativas."
   },
   {
     "id": 8,
@@ -2147,7 +2209,7 @@
     "nome": "Associação Cultural e Educativa Voz D`África - (ACEVA)",
     "identificacao": "Povos originários",
     "categoria": "associacao",
-    "subCategoria": "Associação",
+    "subCategoria": "",
     "eMail": "",
     "telefone": "",
     "website": "",
@@ -2172,7 +2234,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": ""
+    "img": "",
+    "sobre": "A Associação de Moradores do Bairro da Cruz Vermelha do Lumiar (AMBCVL) foi fundada em 1994, e tem como objetivo criar e melhorar as infraestruturas de apoio direto à comunidade residente, nomeadamente através de uma boa iluminação pública, segurança policial eficaz, criação de recintos desportivos e zonas verdes, e resolução de problemas de habitação, visando o aperfeiçoamento social, cultural, físico e cívico. "
   },
   {
     "id": 9,
@@ -2181,7 +2244,7 @@
     "nome": "Movimento Negro em Portugal",
     "identificacao": "Sem informação",
     "categoria": "movimento",
-    "subCategoria": "Movimento",
+    "subCategoria": "",
     "eMail": "mnegroportugal@gmail.com",
     "telefone": "",
     "website": "",
@@ -2206,7 +2269,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": ""
+    "img": "",
+    "sobre": "A Associação Luso Caboverdeana de Sintra (ACAS Sintra) iniciou atividade em 2002, afirmando-se como uma entidade de intervenção comunitária que acolhe, capacita e integra populações vulneráveis do concelho de Sintra, atuando nas freguesias de Rio de Mouro e Algueirão Mem Martins. Com foco na inclusão social, dispõe de gabinete de apoio ao imigrante, e promove ações em várias áreas, como educação e emprego."
   },
   {
     "id": 10,
@@ -2215,7 +2279,7 @@
     "nome": "AfroPsis - Plataforma de Psicólogos Afrodescentes em Portugal",
     "identificacao": "Descendentes",
     "categoria": "uniao",
-    "subCategoria": "Plataforma",
+    "subCategoria": "",
     "eMail": "luizsantana.psi@outlook.com",
     "telefone": "",
     "website": "",
@@ -2240,7 +2304,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/AfroPsis-Plataforma-de-Psicologos-Afrodescentes-em-Portugal.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/AfroPsis-Plataforma-de-Psicologos-Afrodescentes-em-Portugal.jpg",
+    "sobre": "Criada em 2014, a Associação MirAtiva está focada no fortalecimento comunitário e aumento da qualidade de vida da população do Casal da Mira, bem como na construção de uma imagem positiva do bairro. Nesse sentido, estimula relações de vizinhança e aposta numa programação intercultural e intergeracional de atividades, que passam pela promoção da saúde, lazer e bem-estar físico e mental. "
   },
   {
     "id": 11,
@@ -2249,7 +2314,7 @@
     "nome": "SaMaNe (Saúde das Mães Negras)",
     "identificacao": "Povos originários e descendentes",
     "categoria": "coletivo",
-    "subCategoria": "Coletivo",
+    "subCategoria": "",
     "eMail": "ola.samane@gmail.com / carolina.v.s.coimbra@gmail.com",
     "telefone": "",
     "website": "",
@@ -2274,7 +2339,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/SaMaNe-Saude-das-Maes-Negras.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/SaMaNe-Saude-das-Maes-Negras.jpg",
+    "sobre": "A Associação Cultural Moinho da Juventude desenvolve a sua intervenção comunitária desde 1985, envolvendo crianças, jovens, adultos e idosos em torno do lema “Um outro mundo é possível se a gente quiser”. Orientada para a criação de sinergias que estimulam a partilha de competências e a responsabilidade pessoal e grupal, dinamiza atividades a nível socioeducativo, sociocultural, socioprofissional, prestando informação e apoio jurídico e social. "
   },
   {
     "id": 12,
@@ -2283,7 +2349,7 @@
     "nome": "Rizoma",
     "identificacao": "Etnia Cigana",
     "categoria": "associacao",
-    "subCategoria": "Associação",
+    "subCategoria": "",
     "eMail": "geral.rizomassociacao@gmail.com",
     "telefone": "",
     "website": "https://www.rizomassociacao.org/?fbclid=IwY2xjawMtnFFleHRuA2FlbQIxMABicmlkETFXcVpUWHVieXpoSXg2cXBaAR5wr6Yxx8akXIp5eF7kQJYbA_GyKF7qEO7abVLOW4a57tFID-jkZS9TIw2g1Q_aem_9XihmejrhKn_CpSxYKpngQ",
@@ -2308,7 +2374,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Rizoma.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Rizoma.jpg",
+    "sobre": "Iniciada em 2009 por um grupo de jovens, a Associação Moinho em Movimento visa promover a integração dos moradores do Bairro Municipal Moinho das Rolas. Trabalha no apoio a crianças, jovens, famílias e idosos, destacando-se pela criação de equipamentos sociais que beneficiam a comunidade, e pela organização de atividades culturais, recreativas e desportivas. Sempre como foco em soluções e na dignificação humana."
   },
   {
     "id": 13,
@@ -2342,7 +2409,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Aurora-Negra.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Aurora-Negra.jpg",
+    "sobre": "Fundada em 1988, a Olho Vivo - Associação para a Defesa do Património, Ambiente e Direitos Humanos trabalha na defesa dos direitos das pessoas migrantes, promovendo mais justiça social e ambiental. Entre as suas atividades destaca-se o funcionamento do Centro Local de Apoio à Integração de Migrantes, bem como a oferta de projectos promotores da inclusão social de crianças e jovens, onde se inclui o apoio ao estudo."
   },
   {
     "id": 14,
@@ -2376,7 +2444,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": ""
+    "img": "",
+    "sobre": "A Associação Passa Sabi surgiu em 2014, assumindo um papel cada vez mais ativo na mobilização, dinamização e valorização da comunidade do Bairro do Rêgo, em Lisboa. O seu programa de atividades inclui propostas culturais, sociais, económicas e desportivas, envolvendo crianças, jovens e população adulta, como forma de promover relações inter-geracionais, ao mesmo tempo que preserva e divulga a cultura dos residentes."
   },
   {
     "id": 15,
@@ -2410,7 +2479,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Teatro-Ibisco.png.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Teatro-Ibisco.png.jpg",
+    "sobre": "A Casa Seis - Associação para o Desenvolvimento Comunitário tem sede em Mira Sintra, onde se propõe melhorar a qualidade de vida e as condições de inserção social da população local e arredores. Criada em 2000, atua segundo princípios de Educação para a Cidadania Ativa, permitindo que a população possa participar na sociedade como protagonista, exercendo plenamente os seus direitos."
   },
   {
     "id": 16,
@@ -2444,7 +2514,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Artepolon-Associacao.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Artepolon-Associacao.jpg",
+    "sobre": "Desde 1997 a intervir no Bairro da Bela Vista, em Setúbal, o Centro Cultural Africano (CCA) trabalha com crianças de todas as idades, e dá apoio a grupos mais desfavorecidos. Para além das atividades destinadas ao público infantil, onde se inclui o apoio ao estudo, e propostas lúdicas, o espaço dinamiza programação cultural, como por exemplo, exposições, tendo também experiência na orientação e procura de emprego."
   },
   {
     "id": 17,
@@ -2478,7 +2549,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Kubata.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Kubata.jpg",
+    "sobre": "A CooperActiva - Cooperativa de Desenvolvimento Social intervém na defesa dos direitos de grupos em contextos de exclusão social, lutando contra a discriminação e violência. A partilha é um dos valores que promove, mediante a implementação de processos de tomada de decisão participada e democrática, sendo que a sua origem, em 2002, resulta do trabalho desenvolvido pelo CESIS – Centro de Estudos para a Intervenção Social."
   },
   {
     "id": 18,
@@ -2512,7 +2584,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Ballet-para-Todos.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Ballet-para-Todos.jpg",
+    "sobre": "Fundada em 2003, a Associação Fundo de Apoio Social de Cabo-Verdianos em Portugal (FASCP) dirige a sua intervenção para ações de cooperação, desenvolvimento e ajuda humanitária, incluindo o apoio a doentes e reclusos, a capitação de jovens e a organização de conferências. Os objetivos passam também pela consolidação de laços entre a comunidade cabo-verdiana em Portugal e demais população."
   },
   {
     "id": 19,
@@ -2546,7 +2619,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Tributo-aos-Ancestrais-Africanos-PT.png.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Tributo-aos-Ancestrais-Africanos-PT.png.jpg",
+    "sobre": "A Associação de Mulheres Negras, Africanas e Afrodescendentes em Portugal (FEMAFRO) orienta a sua intervenção para a defesa e promoção de direitos das mulheres negras, africanas e afro descendentes em Portugal, procurando a eliminação de todas as formas de discriminação étnico-racial e de género, com base nos princípios éticos da igualdade, justiça social e laboral, promoção da qualidade de vida e respeito dos direitos humanos."
   },
   {
     "id": 20,
@@ -2580,7 +2654,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/A-Fonte.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/A-Fonte.jpg",
+    "sobre": "A Associação dos Filhos e Amigos da Ilha das Galinhas - GHAM-ATHÉ é uma das entidades reconhecidas em Diário da República como associação representativa dos imigrantes e seus descendentes, estatuto atribuído em 2013. Baseada no município do Barreiro, tem atuado como parceira da autarquia, nomeadamente na realização do Festival Encontro de Culturas - Cores, Sons, Sabores e Saberes."
   },
   {
     "id": 21,
@@ -2614,7 +2689,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": ""
+    "img": "",
+    "sobre": "Formalizada em 2007, a Girassol Solidário - Associação de Apoio aos Doentes Evacuados de Cabo Verde atua junto dos cidadãos evacuados de Cabo Verde, residentes na Área Metropolitana de Lisboa, contribuindo para uma melhor integração dos doentes no território nacional, com ações de carácter humanitário, psicossocial, lúdico, e de mediação intercultural. Apoia cerca de 100 pessoas, entre doentes e acompanhantes."
   },
   {
     "id": 22,
@@ -2648,7 +2724,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Quem-me-Lera.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Quem-me-Lera.jpg",
+    "sobre": "GTO LX - Grupo Teatro do Oprimido Lisboa atua desde 2003, embora a formalização como associação remonte a 2005. Apresenta-se como uma organização empenhada em estimular a participação ativa e consciente das pessoas na construção da sociedade, desenvolvendo projetos de intervenção comunitária, através das técnicas de Teatro do/a Oprimido/a. Tem como visão uma sociedade mais justa e plural."
   },
   {
     "id": 23,
@@ -2682,7 +2759,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Bantumen.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Bantumen.jpg",
+    "sobre": "Estabelecido em 2018, o Instituto da Mulher Negra em Portugal (INMUNE) apresenta-se como uma entidade feminista interseccional e anti-racista, que combate a invisibilização e o silenciamento das mulheres negras, africanas e afrodescendentes na História e no presente. Apartidário e solidário, promove a igualdade de direitos, a paridade e a justiça social, bem como empoderamento e a participação social e política feminina."
   },
   {
     "id": 24,
@@ -2716,7 +2794,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Lado-Negro-da-Forca.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Lado-Negro-da-Forca.jpg",
+    "sobre": "A Liáfrica - Liga dos Africanos e Amigos de África vem desenvolvendo, desde a fundação, em 1999, atividades de formação, nomeadamente nos domínios da Educação para a Saúde, na Área Social e na Área Científica. A sua intervenção tem incluído também conferências e congressos, tanto em Portugal como em Angola, contribuindo para a integração da comunidade africana, em particular angolana, em território luso."
   },
   {
     "id": 25,
@@ -2750,7 +2829,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Cha-de-Beleza-Afro.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Cha-de-Beleza-Afro.jpg",
+    "sobre": "Criada em 2016, a Plataforma para o Desenvolvimento da Mulher Africana (Padema) desenvolve a sua intervenção centrada na Mulher Africana diaspórica, nos seus valores culturais e identitários, com vista à sua afirmação na sociedade, tendo em conta a igualdade de género e de oportunidades. Tem-se destacado na organização na FAMA – Feira da Mulher Africana, que celebra, anualmente, o Dia da Mulher Africana."
   },
   {
     "id": 26,
@@ -2784,7 +2864,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Festas-Fidju-Fema.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Festas-Fidju-Fema.jpg",
+    "sobre": "O Pendão em Movimento - Espaço Comunitário agrega, nas suas instalações, moradores, grupos informais, associações de base local, uma área de empreendedorismo social e instituições privadas de solidariedade social. A primeira reunião de cogestão do espaço, para abertura de portas, aconteceu em 2015, ano marcado também pela organização da 1.ª edição do Festival Pendão em Movimento, realizado em 2016."
   },
   {
     "id": 27,
@@ -2818,7 +2899,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Quotidiano-de-uma-Negra.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Quotidiano-de-uma-Negra.jpg",
+    "sobre": "A Pombal XXI - Associação dos Moradores Bairros Pombal / Bento Jesus Caraça nasceu em 2005 como entidade sem fins lucrativos, que tem como objeto social a promoção da emancipação social, cívica e cultural das comunidades dos Bairros do Pombal e Bento de Jesus Caraça, situados no concelho de Oeiras. A sua intervenção está focada em quatro áreas: educação, desporto, ação social e cultura. "
   },
   {
     "id": 28,
@@ -2852,7 +2934,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Pagina-Voto-Negro.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Pagina-Voto-Negro.jpg",
+    "sobre": "Criada em 2012, a PROSAUDESC- Associação de Promotores de Saúde, Ambiente e Desenvolvimento Sócio-Cultural tem como missão a promoção da saúde e a ação social, voltada para o empoderamento das comunidades, através de iniciativas e projetos que visam informar, mobilizar, envolver e apoiar os mais desfavorecidos e vulneráveis, promovendo a integração e inclusão sociais, bem como estilos de vida mais saudáveis."
   },
   {
     "id": 29,
@@ -2886,7 +2969,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Tal-Podcast.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Tal-Podcast.jpg",
+    "sobre": "Fundada em 1996, a Associação Cultural e Juvenil Batoto Yetu Portugal (BYP) atua no domínio da educação não formal, particularmente na área da inclusão através da arte e iniciativas de organização comunitária e promoção da cidadania. O seu trabalho incide sobretudo sobre jovens e crianças interessados na cultura africana e provenientes de meios económicos menos favorecidos, estimulando as suas competências de liderança."
   },
   {
     "id": 30,
@@ -2920,7 +3004,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Mercado-Lusofono.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Mercado-Lusofono.jpg",
+    "sobre": "No terreno desde 2005, a Associação Cavaleiros de São Brás está sediada no Casal da Boba, bairro de habitação municipal do concelho da Amadora, onde vem promovendo eventos locais, como o Boba Li Ke Terra. Esta celebração assinala, em Julho, o Dia da Independência de Cabo Verde, e pretende criar sinergias e ações de formação para trazer grupos de teatro, de investigação, intervenção para a cidadania e ativismo ao bairro. "
   },
   {
     "id": 31,
@@ -2954,6 +3039,7 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Uma-Africana.jpg.jpg"
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Uma-Africana.jpg.jpg",
+    "sobre": "O Grupo EducAR é um grupo multidisciplinar de educadores antirracistas que pensam e fazem uma Educação Antirracista desde 2018 com o objetivo de (re)pensar a Educação dentro e fora da escola com um compromisso antirracista a partir da realidade social portuguesa e do seu diálogo com experiências africanas, afrobrasileiras e afrodiaspórica. Trabalhamos com diferentes abordagens temáticas e formatos para diferentes espaços e públicos tendo a arte-educação como meio e fim neste processo – individual e coletivo; uno e contínuo – de construção da consciência histórica, de prevenção/combate ao comportamento/pensamento racista e discriminatório e de garantia dos direitos humanos ao exercitar compromissos nacionais e internacionais."
   }
 ]

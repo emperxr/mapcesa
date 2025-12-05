@@ -18,7 +18,6 @@
       --glass: rgba(255, 255, 255, 0.88);
       --panel-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 
-      /* Fontes */
       --font-body: 'Heebo', sans-serif;
       --font-title: 'Luckiest Guy', cursive;
       --font-subtitle: 'Sriracha', cursive;
@@ -49,7 +48,7 @@
       padding: 8px 10px;
       border-radius: 12px;
       border: 1px solid #ccc;
-      width: 280px;
+      width: 350px;
       font-size: 14px;
       background: #fff;
       font-family: var(--font-body);
@@ -111,7 +110,6 @@
       font-weight: bold;
       color: var(--accent);
       font-family: var(--font-title);
-      /* LUCKIEST GUY */
       font-weight: 400;
       letter-spacing: 0.1em;
     }
@@ -120,19 +118,13 @@
       font-size: 12px;
       color: var(--muted);
       font-family: var(--font-subtitle);
-
     }
 
-    /* Botão Digitais */
-    /* Botão Digitais CENTRALIZADO */
+    /* Botão Digitais (canto inferior esquerdo) */
     #digitalBtn {
       position: fixed;
       left: 15px;
-      /* distância da esquerda */
       bottom: 100px;
-      /* distância do fundo */
-      z-index: 2100;
-      /* acima do preview */
       z-index: 1500;
       width: 56px;
       height: 56px;
@@ -153,7 +145,6 @@
     #digitalBtn:hover {
       background: #0076C0;
     }
-
 
     #digitalPanel {
       position: fixed;
@@ -233,6 +224,7 @@
       }
     }
 
+    /* SIDE PANEL com scroll total */
     .side-panel {
       position: fixed;
       right: 18px;
@@ -247,7 +239,8 @@
       z-index: 2000;
       transform: translateX(420px);
       transition: transform 260ms ease;
-      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: hidden;
       display: flex;
       flex-direction: column;
       border: 1px solid rgba(0, 0, 0, 0.04);
@@ -265,6 +258,28 @@
         right: 6px;
         transform: translateX(110%);
       }
+    }
+
+    /* Botão fechar colado no topo do scroll, por cima da barra */
+    .panel-close {
+      position: sticky;
+      top: 4px;
+      right: -6px;
+      margin-left: auto;
+      margin-right: 4px;
+      background: rgba(255, 255, 255, 0.95);
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      z-index: 10;
+      font-size: 14px;
+      line-height: 1;
     }
 
     .panel-header {
@@ -294,7 +309,6 @@
       text-align: center;
       margin-top: 6px;
       font-family: var(--font-title);
-      /* LUCKIEST GUY */
       font-weight: 400;
       letter-spacing: 0.1em;
     }
@@ -304,6 +318,26 @@
       color: var(--muted);
       text-align: center;
       font-family: var(--font-subtitle);
+    }
+
+    /* Etiquetas de subcategoria no side panel */
+    .panel-subcats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      justify-content: center;
+      margin: 4px 12px 4px 12px;
+    }
+
+    .subcat-tag {
+      font-size: 11px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: #fff6f0;
+      color: var(--accent);
+      border: 1px solid rgba(228, 125, 41, 0.2);
+      font-family: var(--font-body);
+      white-space: nowrap;
     }
 
     .media-row {
@@ -328,13 +362,6 @@
       font-size: 16px;
     }
 
-    .panel-body {
-      padding: 12px 16px;
-      margin: 0 12px;
-      overflow: auto;
-      flex: 1;
-    }
-
     .panel-about {
       margin: 0 30px;
     }
@@ -346,7 +373,6 @@
       margin: 5px 0px;
       font-size: 13px;
       font-family: var(--font-subtitle);
-      /* SRIRACHA */
       letter-spacing: 0.1em;
     }
 
@@ -356,7 +382,6 @@
       margin: 5px 0;
       font-size: 13px;
       font-family: var(--font-subtitle);
-      /* SRIRACHA */
       letter-spacing: 0.1em;
     }
 
@@ -366,6 +391,13 @@
       margin-bottom: 12px;
       white-space: pre-wrap;
       font-family: var(--font-body);
+    }
+
+    .panel-body {
+      padding: 12px 16px;
+      margin: 0 12px 12px 12px;
+      flex: 1;
+      overflow: visible;
     }
 
     .info-row {
@@ -405,37 +437,33 @@
       font-family: var(--font-body);
     }
 
-    .panel-close {
-      position: absolute;
-      right: 12px;
-      top: 12px;
-      background: rgba(0, 0, 0, 0.06);
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      border: none;
-    }
-
-    /* Filters bottom-left */
+    /* Panel base de filtros (compartilhado) */
     .filter-panel {
       position: absolute;
-      left: 90px;
       bottom: 16px;
       z-index: 1300;
       border-radius: 5px;
       padding: 10px;
       background: var(--card);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-      display: flex;
+      display: none;
       gap: 8px;
       align-items: center;
       flex-wrap: wrap;
       max-width: 198px;
       font-family: var(--font-body);
+    }
+
+    #filterPanel {
+      left: 90px;
+    }
+
+    #filterCategories {
+      left: 90px;
+    }
+
+    .filter-panel.open {
+      display: flex;
     }
 
     .filter-item {
@@ -446,12 +474,10 @@
       color: var(--accent);
       font-size: 13px;
       font-family: var(--font-subtitle);
-      /* SRIRACHA */
     }
 
     .filter-item.active {
       background: var(--card);
-      /* here */
       color: #fff;
     }
 
@@ -460,11 +486,12 @@
       gap: 8px;
       align-items: center;
       justify-content: center;
+      width: 100%;
+      margin-top: 4px;
     }
 
     .toggle-all {
       padding: 6px 10px;
-      margin-left: 65px;
       border-radius: 8px;
       background: var(--accent);
       color: #fff;
@@ -476,7 +503,6 @@
     #toggleFilterBtn {
       position: absolute;
       bottom: 28px;
-      /* antes era top: 16px */
       left: 16px;
       z-index: 1400;
       width: 58px;
@@ -494,18 +520,42 @@
       transition: transform 0.2s ease, background 0.2s;
     }
 
-    /* Ocultar o painel de filtros por padrão */
-    .filter-panel {
+    /* Menu de escolha de tipo de filtro */
+    #filterMode {
+      position: absolute;
+      bottom: 46px;
+      left: 86px;
+      z-index: 1450;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+      padding: 8px;
       display: none;
-      /* agora começa oculto */
+      flex-direction: column;
+      gap: 6px;
+      min-width: 220px;
     }
 
-    .filter-panel.open {
+    #filterMode.open {
       display: flex;
-      /* exibe quando tiver a classe open */
     }
 
+    .mode-btn {
+      border: none;
+      border-radius: 8px;
+      padding: 8px 10px;
+      background: #f5f9ff;
+      color: #0076C0;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: var(--font-body);
+      cursor: pointer;
+      text-align: left;
+    }
 
+    .mode-btn:hover {
+      background: #e4f0ff;
+    }
 
     /* leaflet z-index */
     .leaflet-container {
@@ -533,35 +583,28 @@
       width: 58px;
       height: 58px;
       background-image: url("icons_filter/zoomMaxIcon.svg");
-
     }
 
-    /* Ícone personalizado do Zoom OUT */
     .leaflet-control-zoom-out::before {
       content: "";
       width: 58px;
       height: 58px;
       background-image: url("icons_filter/zoomMinIcon.svg");
-
     }
 
     .leaflet-control-zoom-in span,
     .leaflet-control-zoom-out span {
       color: transparent !important;
       font-size: 0 !important;
-
     }
 
-    /* Preview de 3 digitais - posicionado abaixo do botão centralizado */
+    /* Preview 3 digitais */
     #digitalPreview3 {
       position: fixed;
       left: 50%;
-      /* coloca acima do botão (que está top:95%), ajustar se necessário */
       top: calc(95% - 110px);
-      /* ajusta a distância entre botão e preview */
       transform: translateX(-50%);
       z-index: 1490;
-      /* menor que o botão (1500) e menor que o panel (2000) */
       display: flex;
       gap: 10px;
       align-items: center;
@@ -571,12 +614,10 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
       max-width: 520px;
       overflow: hidden;
-      transition: opacity 160ms ease, transform 160ms ease;
+      transition: opacity 160ms.ease, transform 160ms.ease;
       pointer-events: auto;
-      /* permite clicar nos tiles */
     }
 
-    /* tile compacto para 3 items */
     .digital3-tile {
       display: flex;
       flex-direction: column;
@@ -611,7 +652,6 @@
       width: 90px;
     }
 
-    /* mobile: empilha e reduz */
     @media (max-width: 480px) {
       #digitalPreview3 {
         top: calc(90% - 140px);
@@ -630,7 +670,6 @@
       }
     }
   </style>
-
 </head>
 
 <body>
@@ -642,9 +681,8 @@
 
   <!-- Botão Digitais -->
   <button id="digitalBtn" title="Ver Associações Digitais">
-    <img src="icons_filter/iconDigital.svg" alt="Associações Digitais" class="icon-svg"></button>
-
-
+    <img src="icons_filter/iconDigital.svg" alt="Associações Digitais" class="icon-svg">
+  </button>
 
   <!-- Painel com lista de Digitais -->
   <div id="digitalPanel">
@@ -652,29 +690,38 @@
     <ul id="digitalList"></ul>
   </div>
 
-  <!-- Preview com 3 digitais (abaixo do botão centralizado) -->
+  <!-- Preview com 3 digitais -->
   <div id="digitalPreview3" aria-hidden="false" role="list"></div>
-
-
 
   <div id="map"></div>
 
-  <!-- Filters bottom-left -->
-  <div id="filterPanel" class="filter-panel" aria-hidden="false"></div>
+  <!-- Painéis de filtros (forma jurídica e subCategoria) -->
+  <div id="filterPanel" class="filter-panel" aria-hidden="true"></div>
+  <div id="filterCategories" class="filter-panel" aria-hidden="true"></div>
 
-  <!-- Botão para mostrar filtros -->
+  <!-- Menu para escolher o tipo de filtro -->
+  <div id="filterMode">
+    <button class="mode-btn" data-mode="legal">Filtrar por forma jurídica</button>
+    <button class="mode-btn" data-mode="category">Filtrar por categoria</button>
+    
+  </div>
+
+  <!-- Botão para abrir opções de filtro -->
   <button id="toggleFilterBtn" title="Mostrar Filtros">☰</button>
-
 
   <!-- SIDE PANEL -->
   <aside id="sidePanel" class="side-panel" aria-hidden="true">
+    <button id="closePanel" class="panel-close" title="Fechar">✕</button>
+
     <div class="panel-header">
-      <button id="closePanel" class="panel-close" title="Fechar">✕</button>
       <img id="panelImg" src="" alt="Imagem" />
       <div class="panel-name" id="panelName">Nome</div>
+      <!-- tags AGORA em cima da forma jurídica -->
+      <div class="panel-subcats" id="panelSubcats"></div>
       <div class="panel-cat" id="panelCat">Categoria</div>
       <div class="media-row" id="panelMedia"></div>
     </div>
+
     <div class="panel-about">
       <div>
         <div class="section-about-title">Sobre</div>
@@ -684,41 +731,45 @@
 
     <div class="panel-body" id="panelBody">
       <div>
-        <div class="section-title">Morada</div>
-        <div class="info-row">
+        <!-- Morada -->
+        <div class="section-title address-title">Morada</div>
+        <div class="info-row address-row">
           <div class="info-icon">
             <img src="icons_list/iconAddress.svg" alt="Morada" class="icon-svg">
           </div>
           <div class="info-text" id="panelAddress">Endereço completo</div>
         </div>
 
-        <div class="section-title">Telefone</div>
-        <div class="info-row">
+        <!-- Telefone -->
+        <div class="section-title phone-title">Telefone</div>
+        <div class="info-row phone-row">
           <div class="info-icon">
             <img src="icons_list/iconCall.svg" alt="Telefone" class="icon-svg">
           </div>
           <div class="info-text" id="panelPhone">+351 ...</div>
         </div>
 
-        <div class="section-title">Email</div>
-        <div class="info-row">
+        <!-- Email -->
+        <div class="section-title email-title">Email</div>
+        <div class="info-row email-row">
           <div class="info-icon">
             <img src="icons_list/iconEmail.svg" alt="Email" class="icon-svg">
           </div>
           <div class="info-text" id="panelEmail">email@exemplo.pt</div>
         </div>
 
-        <div class="section-title">Website</div>
-        <div class="info-row">
+        <!-- Website -->
+        <div class="section-title website-title">Website</div>
+        <div class="info-row website-row">
           <div class="info-icon">
             <img src="icons_list/iconWebsite.svg" alt="Website" class="icon-svg">
           </div>
           <div class="info-text" id="panelWebsite">https://...</div>
         </div>
 
-        <div class="info-row">
-
-          <div class="static-activities">
+        <!-- Atividades -->
+        <div class="info-row activities-row">
+          <div class="static-activities" id="panelActivities">
             Atividades: exposições, oficinas, congressos e eventos....
           </div>
         </div>
@@ -728,34 +779,59 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-    // === Botão para mostrar/esconder filtros ===
     const toggleFilterBtn = document.getElementById('toggleFilterBtn');
-    const filterPanel = document.getElementById('filterPanel');
+    const filterPanel = document.getElementById('filterPanel');          // forma jurídica
+    const filterCategories = document.getElementById('filterCategories'); // subCategoria
+    const filterModePanel = document.getElementById('filterMode');
 
+    // Ao clicar no menu, fecha sempre tudo e reabre só o menu de modos
     toggleFilterBtn.addEventListener('click', () => {
-      if (filterPanel.style.display === 'flex' || filterPanel.style.display === '') {
-        filterPanel.style.display = 'none';
-      } else {
-        filterPanel.style.display = 'flex';
+      filterModePanel.classList.remove('open');
+      filterPanel.classList.remove('open');
+      filterCategories.classList.remove('open');
+
+      setTimeout(() => {
+        filterModePanel.classList.add('open');
+      }, 10);
+    });
+
+    // Fechar menu de modos e filtros ao clicar fora
+    document.addEventListener('click', (e) => {
+      const clickedInsideToggle = toggleFilterBtn.contains(e.target);
+      const clickedInsideMode = filterModePanel.contains(e.target);
+      const clickedInsideFilterPanels =
+        filterPanel.contains(e.target) || filterCategories.contains(e.target);
+
+      if (!clickedInsideToggle && !clickedInsideMode && !clickedInsideFilterPanels) {
+        filterModePanel.classList.remove('open');
+        filterPanel.classList.remove('open');
+        filterCategories.classList.remove('open');
       }
     });
 
-    // Fechar painel de filtros ao clicar fora
-    document.addEventListener('click', (e) => {
-      if (
-        filterPanel.style.display === 'flex' &&
-        !filterPanel.contains(e.target) &&
-        e.target !== toggleFilterBtn
-      ) {
-        filterPanel.style.display = 'none';
-      }
+    // Ações dos botões de modo
+    filterModePanel.querySelectorAll('.mode-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mode = btn.getAttribute('data-mode');
+        if (mode === 'category') {
+          filterCategories.classList.add('open');
+          filterPanel.classList.remove('open');
+        } else if (mode === 'legal') {
+          filterPanel.classList.add('open');
+          filterCategories.classList.remove('open');
+        }
+        filterModePanel.classList.remove('open');
+      });
     });
 
     // === CARREGAR DATA.JSON ===
     fetch('data.json').then(r => r.json()).then(data => {
       const todos = Array.isArray(data) ? data : [];
 
-      const fisicas = todos.filter(d => (d.type || '').toLowerCase() === 'fisica' && d.address && d.address.latitude && d.address.longitude);
+      const fisicas = todos.filter(d =>
+        (d.type || '').toLowerCase() === 'fisica' &&
+        d.address && d.address.latitude && d.address.longitude
+      );
       const digitais = todos.filter(d => (d.type || '').toLowerCase() === 'digital');
       const pesquisaveis = [...fisicas, ...digitais];
 
@@ -766,29 +842,113 @@
         attribution: '&copy; OpenStreetMap contributors'
       }).addTo(map);
 
-      // === Side Panel ===
+      // === Side Panel refs ===
       const sidePanel = document.getElementById('sidePanel');
       const closePanelBtn = document.getElementById('closePanel');
       const panelImg = document.getElementById('panelImg');
       const panelName = document.getElementById('panelName');
       const panelCat = document.getElementById('panelCat');
+      const panelSubcats = document.getElementById('panelSubcats');
       const panelMedia = document.getElementById('panelMedia');
       const panelAbout = document.getElementById('panelAbout');
       const panelAddress = document.getElementById('panelAddress');
       const panelPhone = document.getElementById('panelPhone');
       const panelEmail = document.getElementById('panelEmail');
       const panelWebsite = document.getElementById('panelWebsite');
+      const panelActivities = document.getElementById('panelActivities');
+
+      const addressTitle = document.querySelector('.address-title');
+      const addressRow = document.querySelector('.address-row');
+      const phoneTitle = document.querySelector('.phone-title');
+      const phoneRow = document.querySelector('.phone-row');
+      const emailTitle = document.querySelector('.email-title');
+      const emailRow = document.querySelector('.email-row');
+      const websiteTitle = document.querySelector('.website-title');
+      const websiteRow = document.querySelector('.website-row');
+      const activitiesRow = document.querySelector('.activities-row');
+
+      // Labels bonitos para subCategorias
+      const PRETTY_SUBCAT_LABEL = {
+        audiovisual: 'Audiovisual',
+        danca: 'Dança',
+        desporto: 'Desporto',
+        educacao: 'Educação & formação',
+        gastronomia: 'Gastronomia',
+        musica: 'Música',
+        promocao_cultural: 'Promoção cultural',
+        teatro: 'Teatro'
+      };
+
+      // Mapa de forma jurídica bonitinho
+      const CATEGORIA_MAP = {
+      'grupo': 'Grupo',
+      'coletivo_cultural': 'Coletivo Cultural',
+      'coletivo cultural': 'Coletivo Cultural',
+      'associacao': 'Associação',
+      'associação': 'Associação',
+      'empresa_social': 'Empresa Social',
+      'empresa social': 'Empresa Social',
+      'outros': 'Outros',
+
+      'centro': 'Centro',
+      'coletivo': 'Coletivo',
+      'companhia': 'Companhia',
+      'cooperacao': 'Cooperação',
+      'cooperação': 'Cooperação',
+      'espaco_comunitario': 'Espaço comunitário',
+      'espaco comunitario': 'Espaço comunitário',
+      'espaço comunitario': 'Espaço comunitário',
+      'espaço comunitário': 'Espaço comunitário',
+      'frente': 'Frente',
+      'grupo_teatral': 'Grupo teatral',
+      'grupo teatral': 'Grupo teatral',
+      'instituto': 'Instituto',
+      'liga': 'Liga',
+      'movimento': 'Movimento',
+      'musica': 'Centro de Música',
+      'música': 'Centro de Música',
+      'centro musica': 'Centro de Música',
+      'centro_musica': 'Centro de Música',
+      'centro musical': 'Centro musical',
+      'centro cultural': 'Centro cultural',
+      'rede': 'Rede',
+      'uniao': 'União',
+      'união': 'União'
+      };
+
+      // Normaliza texto da subCategoria para key compatível com ficheiros SVG
+      function normalizeSubcatKey(label) {
+        let t = (label || '').toString().trim().toLowerCase();
+        t = t.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        t = t.replace(/&/g, 'e');
+        if (t.includes('educacao')) return 'educacao';
+        if (t.includes('promocao')) return 'promocao_cultural';
+        t = t.replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '');
+        return t;
+      }
+
+      const SUBCAT_ICON_MAP = {
+        audiovisual: 'audiovisual.svg',
+        danca: 'danca.svg',
+        desporto: 'desporto.svg',
+        educacao: 'educacao.svg',
+        gastronomia: 'gastronomia.svg',
+        musica: 'musica.svg',
+        promocao_cultural: 'promocao_cultural.svg',
+        teatro: 'teatro.svg'
+      };
 
       function gerarPopupHTML(o) {
         const thumb = o.img
-          ? `<img src="${o.img}" alt="${(o.nome || '')}" style="width:48px;height:48px;object-fit:cover;border-radius:50%;border:none;" />`
+          ? `<img src="${o.img}" alt="${(o.nome || '')}"
+               style="width:48px;height:48px;object-fit:cover;border-radius:50%;border:none;" />`
           : '';
         return `<div class="mini-popup" style="display:flex;align-items:center;gap:10px;">
-        ${thumb}
-        <div class="m-title" style="color:var(--accent);font-weight:700;font-size:15px;">
-          ${o.nome || ''}
-        </div>
-      </div>`;
+          ${thumb}
+          <div class="m-title" style="color:var(--accent);font-weight:700;font-size:15px;">
+            ${o.nome || ''}
+          </div>
+        </div>`;
       }
 
       function openPanelFor(o) {
@@ -802,45 +962,106 @@
 
         panelName.textContent = o.nome || '-';
 
-        const categoriaMap = {
-          'grupo': 'Grupo',
-          'coletivo_cultural': 'Coletivo Cultural',
-          'associacao': 'Associação',
-          'empresa_social': 'Empresa Social',
-          'outros': 'Outros'
-        };
-        panelCat.textContent = categoriaMap[o.categoria?.toLowerCase()] || (o.categoria || '-');
+        const rawCat = o.categoria || '';
+        const catKey = rawCat.toLowerCase();
+        panelCat.textContent = CATEGORIA_MAP[catKey] || rawCat || '-';
 
-        panelAbout.textContent = o.proposito || o.description || o.sobre || 'Sem descrição disponível.';
+        // Etiquetas de subCategoria no side panel (AGORA acima da categoria)
+        panelSubcats.innerHTML = '';
+        let tags = [];
+
+        if (Array.isArray(o.subcats)) {
+          tags = o.subcats
+            .map(k => (k || '').toString().trim())
+            .filter(Boolean);
+        } else if (typeof o.subCategoria === 'string') {
+          tags = o.subCategoria.split(/[;,]/)
+            .map(t => t.trim())
+            .filter(Boolean)
+            .map(t => normalizeSubcatKey(t));
+        }
+
+        const uniqueKeys = Array.from(new Set(tags));
+        if (uniqueKeys.length) {
+          uniqueKeys.forEach(key => {
+            const label = PRETTY_SUBCAT_LABEL[key] || key;
+            const span = document.createElement('span');
+            span.className = 'subcat-tag';
+            span.textContent = label;
+            panelSubcats.appendChild(span);
+          });
+        }
+
+        panelAbout.textContent =
+          o.proposito || o.description || o.sobre || 'Sem descrição disponível.';
 
         // Morada
         if (o.address && (o.address.latitude && o.address.longitude)) {
           const lat = o.address.latitude;
           const lon = o.address.longitude;
           const addr = o.address.fullAddress || 'Abrir no Google Maps';
-          panelAddress.innerHTML = `<a href="https://www.google.com/maps?q=${lat},${lon}" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none">${addr}</a>`;
+          panelAddress.innerHTML =
+            `<a href="https://www.google.com/maps?q=${lat},${lon}"
+               target="_blank" rel="noopener"
+               style="color:var(--muted); text-decoration:none">${addr}</a>`;
+          addressTitle.style.display = 'block';
+          addressRow.style.display = 'flex';
         } else if (o.address && o.address.fullAddress) {
           const addr = o.address.fullAddress;
           const query = encodeURIComponent(addr);
-          panelAddress.innerHTML = `<a href="https://www.google.com/maps/search/?api=1&query=${query}" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none">${addr}</a>`;
+          panelAddress.innerHTML =
+            `<a href="https://www.google.com/maps/search/?api=1&query=${query}"
+               target="_blank" rel="noopener"
+               style="color:var(--muted); text-decoration:none">${addr}</a>`;
+          addressTitle.style.display = 'block';
+          addressRow.style.display = 'flex';
         } else {
-          panelAddress.textContent = 'Não possui morada física.';
+          addressTitle.style.display = 'none';
+          addressRow.style.display = 'none';
         }
 
         // Telefone
-        panelPhone.innerHTML = o.telefone
-          ? `<a href="tel:${o.telefone}" style="color:var(--muted); text-decoration:none">${o.telefone}</a>`
-          : 'Não possui telefone.';
+        if (o.telefone) {
+          panelPhone.innerHTML =
+            `<a href="tel:${o.telefone}" style="color:var(--muted); text-decoration:none">${o.telefone}</a>`;
+          phoneTitle.style.display = 'block';
+          phoneRow.style.display = 'flex';
+        } else {
+          phoneTitle.style.display = 'none';
+          phoneRow.style.display = 'none';
+        }
 
         // Email
-        panelEmail.innerHTML = o.eMail
-          ? `<a href="mailto:${o.eMail}" style="color:var(--muted); text-decoration:none">${o.eMail}</a>`
-          : 'Não possui email.';
+        if (o.eMail) {
+          panelEmail.innerHTML =
+            `<a href="mailto:${o.eMail}" style="color:var(--muted); text-decoration:none">${o.eMail}</a>`;
+          emailTitle.style.display = 'block';
+          emailRow.style.display = 'flex';
+        } else {
+          emailTitle.style.display = 'none';
+          emailRow.style.display = 'none';
+        }
 
         // Website
-        panelWebsite.innerHTML = o.website
-          ? `<a href="${o.website}" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none">${o.website}</a>`
-          : 'Não possui website.';
+        if (o.website) {
+          panelWebsite.innerHTML =
+            `<a href="${o.website}" target="_blank" rel="noopener"
+               style="color:var(--muted); text-decoration:none">${o.website}</a>`;
+          websiteTitle.style.display = 'block';
+          websiteRow.style.display = 'flex';
+        } else {
+          websiteTitle.style.display = 'none';
+          websiteRow.style.display = 'none';
+        }
+
+        // Atividades (mostra só se houver texto)
+        const atividades = o.atividades || o.activities || '';
+        if (atividades && atividades.trim() !== '') {
+          panelActivities.textContent = atividades;
+          activitiesRow.style.display = 'flex';
+        } else {
+          activitiesRow.style.display = 'none';
+        }
 
         // Redes sociais
         panelMedia.innerHTML = '';
@@ -890,14 +1111,44 @@
         categorias[cat].push(o);
       });
 
-      const layers = {};
-      const allMarkers = [];
+      const markers = [];
+      const subcatLabelsByKey = {};
 
+      // Construção de markers + subCategorias
       Object.entries(categorias).forEach(([cat, orgs]) => {
-        const layer = L.layerGroup();
         orgs.forEach(o => {
-          const lat = parseFloat(o.address.latitude), lon = parseFloat(o.address.longitude);
+          const lat = parseFloat(o.address.latitude);
+          const lon = parseFloat(o.address.longitude);
           if (isNaN(lat) || isNaN(lon)) return;
+
+          const subCats = [];
+
+          // Formato array de slugs
+          if (Array.isArray(o.subcats)) {
+            o.subcats.forEach(kRaw => {
+              const key = (kRaw || '').toString().trim();
+              if (!key) return;
+              subCats.push(key);
+              if (!subcatLabelsByKey[key]) {
+                subcatLabelsByKey[key] = PRETTY_SUBCAT_LABEL[key] || key;
+              }
+            });
+          }
+
+          // Formato texto "Música; Teatro; ..."
+          if (o.subCategoria) {
+            o.subCategoria.split(/[;,]/).forEach(raw => {
+              const label = raw.trim();
+              if (!label) return;
+              const key = normalizeSubcatKey(label);
+              subCats.push(key);
+              if (!subcatLabelsByKey[key]) {
+                subcatLabelsByKey[key] =
+                  PRETTY_SUBCAT_LABEL[key] || label;
+              }
+            });
+          }
+
           const marker = L.marker([lat, lon], {
             icon: L.icon({
               iconUrl: `icons/${cat}.svg`,
@@ -906,6 +1157,7 @@
               popupAnchor: [0, -22]
             })
           });
+
           marker.bindPopup(gerarPopupHTML(o), { closeButton: false, offset: [0, -8] });
 
           marker.on('click', () => {
@@ -914,19 +1166,45 @@
             map.panTo([lat, lon], { animate: true });
           });
 
-          marker.addTo(layer);
-          marker.orgData = o;
-          allMarkers.push(marker);
-        });
+          marker.addTo(map);
 
-        layers[cat] = layer;
-        layer.addTo(map);
+          markers.push({
+            marker,
+            orgData: o,
+            mainCat: cat,
+            subCats
+          });
+        });
       });
 
-      // === FILTROS ===
+      // === Estado dos filtros ===
+      const allCategoryNames = Object.keys(categorias);
+      const activeCategories = new Set(allCategoryNames);
+
+      const allSubcatKeys = Object.keys(subcatLabelsByKey);
+      const activeSubcats = new Set(allSubcatKeys);
+
+      function recomputeVisibility() {
+        markers.forEach(({ marker, mainCat, subCats }) => {
+          const catOk = activeCategories.has(mainCat);
+          const subOk = (activeSubcats.size === 0)
+            ? true
+            : subCats.some(sc => activeSubcats.has(sc));
+          const visible = catOk && subOk;
+
+          if (marker._icon) {
+            marker._icon.style.display = visible ? '' : 'none';
+          }
+          if (marker._shadow) {
+            marker._shadow.style.display = visible ? '' : 'none';
+          }
+        });
+      }
+
+      // === FILTROS por forma jurídica (filterPanel) ===
       const filterPanelElem = document.getElementById('filterPanel');
 
-      Object.keys(layers).forEach(cat => {
+      allCategoryNames.forEach(cat => {
         const btn = document.createElement('div');
         btn.className = 'filter-item active';
 
@@ -939,25 +1217,25 @@
         iconImg.style.objectFit = 'contain';
         btn.appendChild(iconImg);
 
-        const categoryName = document.createElement('span');
-        categoryName.textContent = cat;
-        categoryName.style.display = 'none';
-        btn.appendChild(categoryName);
+        const categoryNameSpan = document.createElement('span');
+        categoryNameSpan.textContent = cat;
+        categoryNameSpan.style.display = 'none';
+        btn.appendChild(categoryNameSpan);
 
         btn.addEventListener('click', () => {
-          if (map.hasLayer(layers[cat])) {
-            map.removeLayer(layers[cat]);
+          if (activeCategories.has(cat)) {
+            activeCategories.delete(cat);
             btn.classList.remove('active');
           } else {
-            map.addLayer(layers[cat]);
+            activeCategories.add(cat);
             btn.classList.add('active');
           }
+          recomputeVisibility();
         });
 
         filterPanelElem.appendChild(btn);
       });
 
-      // === Alternar todos ===
       const controlsDiv = document.createElement('div');
       controlsDiv.className = 'filter-controls';
       const toggleBtn = document.createElement('button');
@@ -967,37 +1245,102 @@
 
       toggleBtn.addEventListener('click', () => {
         allVisible = !allVisible;
-        toggleBtn.textContent = allVisible ? 'Ocultar ' : 'Mostrar';
+        toggleBtn.textContent = allVisible ? 'Ocultar' : 'Mostrar';
 
-        Object.entries(layers).forEach(([cat, layer]) => {
-          const btn = Array.from(filterPanelElem.children).find(el => el.textContent === cat);
-          if (allVisible) {
-            map.addLayer(layer);
-            btn.classList.add('active');
-          } else {
-            map.removeLayer(layer);
-            btn.classList.remove('active');
+        activeCategories.clear();
+        if (allVisible) {
+          allCategoryNames.forEach(c => activeCategories.add(c));
+        }
+
+        Array.from(filterPanelElem.children).forEach(child => {
+          if (!child.classList.contains('filter-controls')) {
+            if (allVisible) child.classList.add('active');
+            else child.classList.remove('active');
           }
         });
+
+        recomputeVisibility();
       });
 
       controlsDiv.appendChild(toggleBtn);
       filterPanelElem.appendChild(controlsDiv);
 
-      // ============================================================
-      // === 🔥 LÓGICA COMPLETA DO DIGITAL BTN (RESTAURADA) 🔥 ===
-      // ============================================================
+      // === FILTROS por subCategoria (filterCategories) ===
+      const filterCategoriesElem = document.getElementById('filterCategories');
 
+      allSubcatKeys.forEach(key => {
+        const label = subcatLabelsByKey[key];
+        const btn = document.createElement('div');
+        btn.className = 'filter-item active';
+
+        const iconName = SUBCAT_ICON_MAP[key] || 'audiovisual.svg';
+        const iconImg = document.createElement('img');
+        iconImg.src = `icons_categories/${iconName}`;
+        iconImg.alt = label;
+        iconImg.style.width = '60px';
+        iconImg.style.height = '60px';
+        iconImg.style.objectFit = 'contain';
+        btn.appendChild(iconImg);
+
+        const labelSpan = document.createElement('span');
+        labelSpan.textContent = label;
+        labelSpan.style.display = 'none';
+        btn.appendChild(labelSpan);
+
+        btn.addEventListener('click', () => {
+          if (activeSubcats.has(key)) {
+            activeSubcats.delete(key);
+            btn.classList.remove('active');
+          } else {
+            activeSubcats.add(key);
+            btn.classList.add('active');
+          }
+          recomputeVisibility();
+        });
+
+        filterCategoriesElem.appendChild(btn);
+      });
+
+      const controlsDivSub = document.createElement('div');
+      controlsDivSub.className = 'filter-controls';
+      const toggleBtnSub = document.createElement('button');
+      toggleBtnSub.className = 'toggle-all';
+      toggleBtnSub.textContent = 'Ocultar';
+      let allSubVisible = true;
+
+      toggleBtnSub.addEventListener('click', () => {
+        allSubVisible = !allSubVisible;
+        toggleBtnSub.textContent = allSubVisible ? 'Ocultar' : 'Mostrar';
+
+        activeSubcats.clear();
+        if (allSubVisible) {
+          allSubcatKeys.forEach(k => activeSubcats.add(k));
+        }
+
+        Array.from(filterCategoriesElem.children).forEach(child => {
+          if (!child.classList.contains('filter-controls')) {
+            if (allSubVisible) child.classList.add('active');
+            else child.classList.remove('active');
+          }
+        });
+
+        recomputeVisibility();
+      });
+
+      controlsDivSub.appendChild(toggleBtnSub);
+      filterCategoriesElem.appendChild(controlsDivSub);
+
+      // ============================================================
+      // === LÓGICA DIGITAL BTN + LISTA + PREVIEW 3 ALEATÓRIOS ======
+      // ============================================================
       const digitalBtn = document.getElementById('digitalBtn');
       const digitalPanel = document.getElementById('digitalPanel');
       const digitalList = document.getElementById('digitalList');
 
-      // Abrir / Fechar painel
       digitalBtn.addEventListener('click', () => {
         digitalPanel.classList.toggle('open');
       });
 
-      // Preencher lista digital
       function preencherDigitais() {
         digitalList.innerHTML = '';
 
@@ -1009,12 +1352,12 @@
         digitais.forEach(o => {
           const li = document.createElement('li');
           li.innerHTML = `
-          <img src="${o.img || 'https://via.placeholder.com/44'}" alt="">
-          <div>
-            <div style="font-weight:700;color:var(--accent)">${o.nome}</div>
-            <div style="font-size:12px;color:var(--muted)">${o.categoria || 'Digital'}</div>
-          </div>
-        `;
+            <img src="${o.img || 'https://via.placeholder.com/44'}" alt="">
+            <div>
+              <div style="font-weight:700;color:var(--accent)">${o.nome}</div>
+              <div style="font-size:12px;color:var(--muted)">${o.categoria || 'Digital'}</div>
+            </div>
+          `;
 
           li.addEventListener('click', () => {
             digitalPanel.classList.remove('open');
@@ -1027,10 +1370,10 @@
 
       preencherDigitais();
 
-      // ===== Preview seguro de 3 digitais (colocar dentro do .then, depois de preencherDigitais()) =====
+      // Preview 3 digitais
       (function () {
         const previewEl = document.getElementById('digitalPreview3');
-        if (!previewEl) return; // nada a fazer se elemento não existir
+        if (!previewEl) return;
 
         function pickRandom(arr, n) {
           const copy = Array.isArray(arr) ? [...arr] : [];
@@ -1056,17 +1399,16 @@
             tile.className = 'digital3-tile';
             tile.title = o.nome || 'Sem nome';
             tile.innerHTML = `
-        <img src="${o.img || 'https://via.placeholder.com/56'}" alt="${(o.nome || '')}" />
-        <div class="d3-name">${o.nome || 'Sem nome'}</div>
-      `;
-            // Clique abre sidePanel com detalhe; NÃO altera o estado do digitalPanel (listagem permanece independente)
+              <img src="${o.img || 'https://via.placeholder.com/56'}" alt="${(o.nome || '')}" />
+              <div class="d3-name">${o.nome || 'Sem nome'}</div>
+            `;
+
             tile.addEventListener('click', (ev) => {
               ev.stopPropagation();
-              // abre o painel lateral com detalhes
               try { openPanelFor(o); } catch (err) { console.error(err); }
-              // opcional: centra mapa se tiver coords
               if (o.address && o.address.latitude && o.address.longitude && typeof map !== 'undefined') {
-                const lat = parseFloat(o.address.latitude), lon = parseFloat(o.address.longitude);
+                const lat = parseFloat(o.address.latitude);
+                const lon = parseFloat(o.address.longitude);
                 if (!isNaN(lat) && !isNaN(lon)) map.setView([lat, lon], 14);
               }
             });
@@ -1077,27 +1419,17 @@
           previewEl.style.display = 'flex';
         }
 
-        // renderiza na carga
         render3Preview();
 
-        // se quiseres novas 3 ao clicar no botão digital, re-renderiza sem tocar no listener original:
         const digitalBtnEl = document.getElementById('digitalBtn');
         if (digitalBtnEl) {
           digitalBtnEl.addEventListener('click', () => {
-            // delay curto para deixar abrir painel principal se houver listener que toggleia
             setTimeout(render3Preview, 120);
           });
         }
-
-        // impede que cliques fora fechem o side panel inesperadamente (opcional)
-        document.addEventListener('click', (e) => {
-          // se clicou fora do preview e fora do botão, não faz nada extra (manter comportamento existente)
-        });
-
       })();
 
-
-      // --- INÍCIO: lógica de pesquisa (colar dentro do .then onde pesquisaveis está definido) ---
+      // === Lógica de pesquisa ===
       const searchInput = document.getElementById('searchInput');
       const searchResults = document.getElementById('searchResults');
 
@@ -1112,22 +1444,22 @@
           return;
         }
         searchResults.innerHTML = '';
-        items.slice(0, 20).forEach(o => { // limita a 20 resultados
+        items.slice(0, 20).forEach(o => {
           const li = document.createElement('li');
           li.innerHTML = `
-      <div class="result-item">
-        <img src="${o.img || 'https://via.placeholder.com/40'}" alt="">
-        <div>
-          <div class="m-title">${o.nome || 'Sem nome'}</div>
-          <div class="m-cat">${o.categoria || (o.type || '')}</div>
-        </div>
-      </div>
-    `;
+            <div class="result-item">
+              <img src="${o.img || 'https://via.placeholder.com/40'}" alt="">
+              <div>
+                <div class="m-title">${o.nome || 'Sem nome'}</div>
+                <div class="m-cat">${o.categoria || (o.type || '')}</div>
+              </div>
+            </div>
+          `;
           li.addEventListener('click', () => {
-            // se for digital, abre painel; se for física, centra no mapa e abre painel
             searchResults.style.display = 'none';
             if (o.address && o.address.latitude && o.address.longitude) {
-              const lat = parseFloat(o.address.latitude), lon = parseFloat(o.address.longitude);
+              const lat = parseFloat(o.address.latitude);
+              const lon = parseFloat(o.address.longitude);
               if (!isNaN(lat) && !isNaN(lon)) {
                 map.setView([lat, lon], 15, { animate: true });
               }
@@ -1139,7 +1471,6 @@
         searchResults.style.display = 'block';
       }
 
-      // Filtrar por texto, normalizando (remove acentos, case-insensitive)
       function filterSearch(q) {
         const nq = normalizeText(q);
         if (!nq) {
@@ -1150,6 +1481,7 @@
           const hay = [
             o.nome,
             o.categoria,
+            o.subCategoria,
             o.proposito,
             o.description,
             o.sobre,
@@ -1162,7 +1494,6 @@
         renderSearchResults(results);
       }
 
-      // debounce simples para melhorar UX
       let searchTimeout = null;
       searchInput.addEventListener('input', (e) => {
         clearTimeout(searchTimeout);
@@ -1170,14 +1501,12 @@
         searchTimeout = setTimeout(() => filterSearch(q), 180);
       });
 
-      // fechar resultados ao clicar fora
       document.addEventListener('click', (ev) => {
         if (!document.querySelector('.search-box').contains(ev.target)) {
           searchResults.style.display = 'none';
         }
       });
 
-      // permitir tecla ESC para fechar e ENTER para selecionar primeiro
       searchInput.addEventListener('keydown', (ev) => {
         if (ev.key === 'Escape') {
           searchResults.style.display = 'none';
@@ -1188,20 +1517,15 @@
         }
       });
 
-      // Ajustes visuais se preciso (garante que fica por cima)
       searchResults.style.zIndex = 1600;
       searchResults.style.maxHeight = '360px';
       searchResults.style.overflowY = 'auto';
-      // --- FIM: lógica de pesquisa ---
-
 
     }).catch(err => {
       console.error('Erro a carregar data.json', err);
       alert('Erro a carregar data.json — ver console.');
     });
   </script>
-
-
 
 </body>
 
