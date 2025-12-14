@@ -1260,21 +1260,16 @@
         categoryNameSpan.style.display = 'none';
         btn.appendChild(categoryNameSpan);
 
- btn.addEventListener('click', () => {
-  // 🔹 comportamento exclusivo: clicar = mostrar só esta subCategoria
-  activeSubcats.clear();
-
-  Array.from(filterCategoriesElem.children).forEach(child => {
-    if (!child.classList.contains('filter-controls')) {
-      child.classList.remove('active');
-    }
-  });
-
-  activeSubcats.add(key);
-  btn.classList.add('active');
-
-  recomputeVisibility();
-});
+        btn.addEventListener('click', () => {
+          if (activeCategories.has(cat)) {
+            activeCategories.delete(cat);
+            btn.classList.remove('active');
+          } else {
+            activeCategories.add(cat);
+            btn.classList.add('active');
+          }
+          recomputeVisibility();
+        });
 
         filterPanelElem.appendChild(btn);
       });
