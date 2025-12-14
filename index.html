@@ -985,6 +985,20 @@
         panelSubcats.innerHTML = '';
         let tags = [];
 
+        // subcats como array
+        if (Array.isArray(o.subcats)) {
+          tags = o.subcats
+            .map(k => normalizeSubcatKey(k))
+            .filter(Boolean);
+        }
+
+        // subCategoria como string
+        else if (typeof o.subCategoria === 'string') {
+          tags = o.subCategoria
+            .split(/[;,]/)
+            .map(t => normalizeSubcatKey(t))
+            .filter(Boolean);
+        }
 
         // remover duplicados
         tags = [...new Set(tags)];
