@@ -920,14 +920,28 @@
 
       // Normaliza texto da subCategoria para key compatível com ficheiros SVG
       function normalizeSubcatKey(label) {
-        let t = (label || '').toString().trim().toLowerCase();
-        t = t.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        t = t.replace(/&/g, 'e');
+        if (!label) return null;
+
+        const t = label
+          .toString()
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/&/g, 'e')
+          .trim();
+
+        if (t.includes('audiovisual')) return 'audiovisual';
+        if (t.includes('danca')) return 'danca';
+        if (t.includes('desporto')) return 'desporto';
         if (t.includes('educacao')) return 'educacao';
-        if (t.includes('promocao')) return 'promocao_cultural';
-        t = t.replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '');
-        return t;
+        if (t.includes('gastronomia')) return 'gastronomia';
+        if (t.includes('musica')) return 'musica';
+        if (t.includes('promocao_cultural')) return 'promocao_cultural';
+        if (t.includes('teatro')) return 'teatro';
+
+        return null; // ⚠️ MUITO IMPORTANTE
       }
+
 
       const SUBCAT_ICON_MAP = {
         audiovisual: 'audiovisual.svg',
@@ -935,9 +949,9 @@
         desporto: 'desporto.svg',
         educacao: 'educacao.svg',
         gastronomia: 'gastronomia.svg',
-        musica: 'musica.svg',
         promocao_cultural: 'promocao_cultural.svg',
-        teatro: 'teatro.svg'
+        teatro: 'teatro.svg',
+        musica: 'musica.svg'
       };
 
       function gerarPopupHTML(o) {
@@ -968,31 +982,36 @@
         const catKey = rawCat.toLowerCase();
         panelCat.textContent = CATEGORIA_MAP[catKey] || rawCat || '-';
 
-        // Etiquetas de subCategoria no side panel (AGORA acima da categoria)
         panelSubcats.innerHTML = '';
         let tags = [];
 
+        // subcats como array
         if (Array.isArray(o.subcats)) {
           tags = o.subcats
-            .map(k => (k || '').toString().trim())
+            .map(k => normalizeSubcatKey(k))
             .filter(Boolean);
-        } else if (typeof o.subCategoria === 'string') {
-          tags = o.subCategoria.split(/[;,]/)
-            .map(t => t.trim())
-            .filter(Boolean)
-            .map(t => normalizeSubcatKey(t));
         }
 
-        const uniqueKeys = Array.from(new Set(tags));
-        if (uniqueKeys.length) {
-          uniqueKeys.forEach(key => {
-            const label = PRETTY_SUBCAT_LABEL[key] || key;
-            const span = document.createElement('span');
-            span.className = 'subcat-tag';
-            span.textContent = label;
-            panelSubcats.appendChild(span);
-          });
+        // subCategoria como string
+        else if (typeof o.subCategoria === 'string') {
+          tags = o.subCategoria
+            .split(/[;,]/)
+            .map(t => normalizeSubcatKey(t))
+            .filter(Boolean);
         }
+
+        // remover duplicados
+        tags = [...new Set(tags)];
+
+        // renderizar etiquetas
+        tags.forEach(key => {
+          const label = PRETTY_SUBCAT_LABEL[key] || key;
+          const span = document.createElement('span');
+          span.className = 'subcat-tag';
+          span.textContent = label;
+          panelSubcats.appendChild(span);
+        });
+
 
         panelAbout.textContent =
           o.proposito || o.description || o.sobre || 'Sem descrição disponível.';
@@ -1125,31 +1144,46 @@
 
           const subCats = [];
 
-          // Formato array de slugs
+          // Formato array de slugs (NORMALIZADO)
           if (Array.isArray(o.subcats)) {
             o.subcats.forEach(kRaw => {
-              const key = (kRaw || '').toString().trim();
+              const key = normalizeSubcatKey(kRaw);
               if (!key) return;
+
               subCats.push(key);
+
               if (!subcatLabelsByKey[key]) {
                 subcatLabelsByKey[key] = PRETTY_SUBCAT_LABEL[key] || key;
               }
             });
           }
 
+
           // Formato texto "Música; Teatro; ..."
-          if (o.subCategoria) {
+          if (typeof o.subCategoria === 'string') {
             o.subCategoria.split(/[;,]/).forEach(raw => {
               const label = raw.trim();
               if (!label) return;
               const key = normalizeSubcatKey(label);
+              if (!key) return;
               subCats.push(key);
+
               if (!subcatLabelsByKey[key]) {
                 subcatLabelsByKey[key] =
                   PRETTY_SUBCAT_LABEL[key] || label;
               }
             });
           }
+
+          // 🔒 GARANTIA: música como área de atuação implícita
+          if (subCats.length === 0 && cat === 'musica') {
+            subCats.push('musica');
+
+            if (!subcatLabelsByKey['musica']) {
+              subcatLabelsByKey['musica'] = PRETTY_SUBCAT_LABEL['musica'];
+            }
+          }
+
 
           const marker = L.marker([lat, lon], {
             icon: L.icon({
@@ -1189,9 +1223,11 @@
       function recomputeVisibility() {
         markers.forEach(({ marker, mainCat, subCats }) => {
           const catOk = activeCategories.has(mainCat);
-          const subOk = (activeSubcats.size === 0)
-            ? true
-            : subCats.some(sc => activeSubcats.has(sc));
+          const subOk =
+            activeSubcats.size === allSubcatKeys.length
+              ? true
+              : subCats.some(sc => activeSubcats.has(sc));
+
           const visible = catOk && subOk;
 
           if (marker._icon) {
@@ -1224,16 +1260,21 @@
         categoryNameSpan.style.display = 'none';
         btn.appendChild(categoryNameSpan);
 
-        btn.addEventListener('click', () => {
-          if (activeCategories.has(cat)) {
-            activeCategories.delete(cat);
-            btn.classList.remove('active');
-          } else {
-            activeCategories.add(cat);
-            btn.classList.add('active');
-          }
-          recomputeVisibility();
-        });
+ btn.addEventListener('click', () => {
+  // 🔹 comportamento exclusivo: clicar = mostrar só esta subCategoria
+  activeSubcats.clear();
+
+  Array.from(filterCategoriesElem.children).forEach(child => {
+    if (!child.classList.contains('filter-controls')) {
+      child.classList.remove('active');
+    }
+  });
+
+  activeSubcats.add(key);
+  btn.classList.add('active');
+
+  recomputeVisibility();
+});
 
         filterPanelElem.appendChild(btn);
       });
