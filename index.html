@@ -1222,13 +1222,18 @@
 
       function recomputeVisibility() {
         markers.forEach(({ marker, mainCat, subCats }) => {
-          const catOk = activeCategories.has(mainCat);
-          const subOk =
-            activeSubcats.size === allSubcatKeys.length
-              ? true
-              : subCats.some(sc => activeSubcats.has(sc));
 
-          const visible = catOk && subOk;
+          // === FORMA JURÍDICA (INCLUSÃO) ===
+          const catOk =
+            activeCategories.size === 0
+              ? false
+              : activeCategories.has(mainCat);
+
+          // === ÁREA DE ATUAÇÃO (EXCLUSÃO) ===
+          const hasExcluded =
+            subCats.some(sc => excludedSubcats.has(sc));
+
+          const visible = catOk && !hasExcluded;
 
           if (marker._icon) {
             marker._icon.style.display = visible ? '' : 'none';
@@ -1238,6 +1243,7 @@
           }
         });
       }
+
 
       // === FILTROS por forma jurídica (filterPanel) ===
       const filterPanelElem = document.getElementById('filterPanel');
@@ -1304,12 +1310,16 @@
       filterPanelElem.appendChild(controlsDiv);
 
       // === FILTROS por subCategoria (filterCategories) ===
+      // === FILTROS por subCategoria (filterCategories) — modo EXCLUSÃO ===
       const filterCategoriesElem = document.getElementById('filterCategories');
+
+      // começa SEM exclusões
+      const excludedSubcats = new Set();
 
       allSubcatKeys.forEach(key => {
         const label = subcatLabelsByKey[key];
         const btn = document.createElement('div');
-        btn.className = 'filter-item active';
+        btn.className = 'filter-item active'; // ativo = NÃO excluído
 
         const iconName = SUBCAT_ICON_MAP[key] || 'audiovisual.svg';
         const iconImg = document.createElement('img');
@@ -1320,18 +1330,15 @@
         iconImg.style.objectFit = 'contain';
         btn.appendChild(iconImg);
 
-        const labelSpan = document.createElement('span');
-        labelSpan.textContent = label;
-        labelSpan.style.display = 'none';
-        btn.appendChild(labelSpan);
-
         btn.addEventListener('click', () => {
-          if (activeSubcats.has(key)) {
-            activeSubcats.delete(key);
-            btn.classList.remove('active');
-          } else {
-            activeSubcats.add(key);
+          if (excludedSubcats.has(key)) {
+            // voltar a mostrar
+            excludedSubcats.delete(key);
             btn.classList.add('active');
+          } else {
+            // ocultar tudo que tem essa subcategoria
+            excludedSubcats.add(key);
+            btn.classList.remove('active');
           }
           recomputeVisibility();
         });
@@ -1350,9 +1357,12 @@
         allSubVisible = !allSubVisible;
         toggleBtnSub.textContent = allSubVisible ? 'Ocultar' : 'Mostrar';
 
-        activeSubcats.clear();
-        if (allSubVisible) {
-          allSubcatKeys.forEach(k => activeSubcats.add(k));
+        // 🔥 ESTE É O ESTADO REAL
+        excludedSubcats.clear();
+
+        if (!allSubVisible) {
+          // ocultar tudo → excluir todas as subcategorias
+          allSubcatKeys.forEach(k => excludedSubcats.add(k));
         }
 
         Array.from(filterCategoriesElem.children).forEach(child => {
@@ -1364,6 +1374,7 @@
 
         recomputeVisibility();
       });
+
 
       controlsDivSub.appendChild(toggleBtnSub);
       filterCategoriesElem.appendChild(controlsDivSub);
