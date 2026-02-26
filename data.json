@@ -1989,7 +1989,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Djass-Associacao-de-Afrodescendentes.jpg"},
+    "sobre": "A Djass – Associação de Afrodescendentes é uma organização sem fins lucrativos, constituída em Lisboa a 25 de maio de 2016, com a missão de defender e promover os direitos das pessoas negras e afrodescendentes em Portugal e de combater o racismo em todas as suas formas e dimensões, reivindicando políticas e práticas de igualdade.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Djass-Associacao-de-Afrodescendentes.jpg"
+  },
   {
     "id": 2,
     "no": 2,
@@ -2022,8 +2024,9 @@
       "parish": "",
       "fullAddress": ""
     },
+    "sobre": "A Nêga Filmes e Produções Artísticas é um Colectivo Cultural. Inicialmente criado por mulheres negras, imigrantes, fazendo e pensando arte. Sempre a partir da perspectiva de um corpo negro no mundo, desterritorializado, mas ao mesmo tempo, absurdamente marcado.",
     "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Nega-Filmes-e-Producoes-Artisticas.jpg"
- },
+  },
   {
     "id": 3,
     "no": 3,
@@ -2056,7 +2059,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Plataforma-Gueto.jpg"},
+    "sobre": "A Plataforma GUETO pretende dar voz à comunidade negra em Portugal, representando todos os irmãos e irmãs oprimidos, segregados e discriminados por este sistema. Desenvolve uma descolonização mental e promove a auto-estima de uma comunidade que tem a sua história exumada.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Plataforma-Gueto.jpg"
+  },
   {
     "id": 4,
     "no": 4,
@@ -2089,7 +2094,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Mulheres-Negras-Escurecidas.jpg"},
+    "sobre": "MULHERES NEGRAS ESCURECIDAS (MNE) são um coletivo de mulheres negras que tem por base a troca de afetos. Escurecidas nos seus pensamentos e ideais, criam um espaço seguro de reflexões sobre diferentes questões e empoderamento.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Mulheres-Negras-Escurecidas.jpg"
+  },
   {
     "id": 5,
     "no": 5,
@@ -2122,7 +2129,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg"},
+    "sobre": "Começou por ser um grupo de teatro fórum, e hoje com o teatro, a música, a alfabetização e outras ferramentas, mantém uma prática de discussão horizontal junto da comunidade caboverdeana. PNMN fazem parte da Khapaz – Associação Cultural de Afrodescendentes.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg"
+  },
   {
     "id": 6,
     "no": 6,
@@ -2155,7 +2164,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Afrolis-Associacao-Cultural.jpg"},
+    "sobre": "Afrolis é um projeto de informação digital que visa mudar a perceção da realidade sobre as mulheres negras e racializadas em Portugal e no mundo.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Afrolis-Associacao-Cultural.jpg"
+  },
   {
     "id": 7,
     "no": 7,
@@ -2188,7 +2199,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Frente-Anti-Racista-FAR.jpg"},
+    "sobre": "A FAR tem como objectivo contribuir para a resolução dos problemas relacionados com o Racismo e Xenofobia na sociedade portuguesa.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Frente-Anti-Racista-FAR.jpg"
+  },
   {
     "id": 8,
     "no": 8,
@@ -2221,7 +2234,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg"},
+    "sobre": "O grupo Voz D´África surgiu em 1997 em Cascais, no Bairro das Marianas. Atualmente é composto por 16 mulheres e 1 homem. A sua atividade cultural desenvolveu-se através da participação musical no batuque em diferentes espetáculos e gravações com nomes relevantes do panorama musical de Cabo Verde.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg"
+  },
   {
     "id": 9,
     "no": 9,
@@ -2254,7 +2269,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg"},
+    "sobre": "Movimento social de consciencialização e organização civil contra o racismo.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg"
+  },
   {
     "id": 10,
     "no": 10,
@@ -2287,7 +2304,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/AfroPsis-Plataforma-de-Psicologos-Afrodescentes-em-Portugal.jpg"},
+    "sobre": "Plataforma de Psicólogos, Psicoterapeutas e Técnicos de Saúde Mental e Intervenção Social e Comunitária Afrodescendentes em Portugal.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/AfroPsis-Plataforma-de-Psicologos-Afrodescentes-em-Portugal.jpg"
+  },
   {
     "id": 11,
     "no": 11,
@@ -2320,7 +2339,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/SaMaNe-Saude-das-Maes-Negras.jpg"},
+    "sobre": "SAMANE é uma associação de mulheres que trabalha as questões de saúde materna das mulheres negras e racializadas em Portugal.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/SaMaNe-Saude-das-Maes-Negras.jpg"
+  },
   {
     "id": 12,
     "no": 12,
@@ -2353,7 +2374,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Rizoma.jpg"},
+    "sobre": "A Associação RIZOMA foi fundada em 2022 para colmatar a falta de representatividade e conteúdos audiovisuais positivos sobre a comunidade cigana. O seu objetivo é promover a integração e o desenvolvimento social, com especial enfoque nos jovens da comunidade cigana em Portugal.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Rizoma.jpg"
+  },
   {
     "id": 13,
     "no": 13,
@@ -2386,7 +2409,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Aurora-Negra.jpg"},
+    "sobre": "Aurora Negra é um coletivo artístico fundado por Cleo Diára, Isabél Zuaa e Nádia Yracema.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Aurora-Negra.jpg"
+  },
   {
     "id": 15,
     "no": 15,
@@ -2419,7 +2444,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Teatro-Ibisco.png.jpg"},
+    "sobre": "Associação Teatro IBISCO, Teatro Inter Bairros para a Inclusão Social e Cultura do Optimismo, resulta de um processo pioneiro de inclusão pela arte que juntou jovens de seis bairros de Loures, utilizando o teatro como ferramenta de capacitação, emancipação e auto-estima.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Teatro-Ibisco.png.jpg"
+  },
   {
     "id": 16,
     "no": 16,
@@ -2452,7 +2479,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Artepolon-Associacao.jpg" },
+    "sobre": "Associação artística dedicada ao desenvolvimento de criações e práticas em diversas disciplinas — artes performativas, literatura, cinema, audiovisual, artes visuais, plásticas e digitais — promovendo a partilha de experiências culturais através de residências artísticas e eventos.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Artepolon-Associacao.jpg"
+  },
   {
     "id": 17,
     "no": 17,
@@ -2485,7 +2514,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Kubata.jpg"},
+    "sobre": "Casa de potencialização artística situada na Linha de Sintra.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Kubata.jpg"
+  },
   {
     "id": 18,
     "no": 18,
@@ -2518,7 +2549,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Ballet-para-Todos.jpg"},
+    "sobre": "Inclusão, expressão e transformação através da dança. Projeto de ballet gratuito e acessível para comunidades marginalizadas nas periferias de Lisboa.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Ballet-para-Todos.jpg"
+  },
   {
     "id": 19,
     "no": 19,
@@ -2551,7 +2584,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Tributo-aos-Ancestrais-Africanos-PT.png.jpg"},
+    "sobre": "Tributo aos Ancestrais Portugal, iniciado em 2017, homenageia os antepassados africanos escravizados que perderam a vida durante o comércio transatlântico em Portugal.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Tributo-aos-Ancestrais-Africanos-PT.png.jpg"
+  },
   {
     "id": 20,
     "no": 20,
@@ -2584,7 +2619,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/A-Fonte.jpg" },
+    "sobre": "Associação de intervenção e difusão cultural.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/A-Fonte.jpg"
+  },
   {
     "id": 21,
     "no": 21,
@@ -2617,7 +2654,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg"},
+    "sobre": "Passeio afetivo Nozstoria: histórias de resistência e memória que não se encontram nos manuais escolares.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg"
+  },
   {
     "id": 22,
     "no": 22,
@@ -2650,7 +2689,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Quem-me-Lera.jpg"},
+    "sobre": "Clube de leitura antirracista.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Quem-me-Lera.jpg"
+  },
   {
     "id": 23,
     "no": 23,
@@ -2683,7 +2724,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Bantumen.jpg"},
+    "sobre": "A BANTUMEN é uma publicação digital portuguesa focada em cultura, criatividade, inovação e empreendedorismo afrodescendente.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Bantumen.jpg"
+  },
   {
     "id": 24,
     "no": 24,
@@ -2716,7 +2759,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Lado-Negro-da-Forca.jpg" },
+    "sobre": "Conta digital criada para denunciar e combater o racismo em Portugal.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Lado-Negro-da-Forca.jpg"
+  },
   {
     "id": 25,
     "no": 25,
@@ -2749,7 +2794,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Cha-de-Beleza-Afro.jpg"},
+    "sobre": "Chá de Beleza Afro é uma plataforma de networking que promove e empodera mulheres africanas e afrodescendentes através de eventos, debates e ciclos de conversas.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Cha-de-Beleza-Afro.jpg"
+  },
   {
     "id": 26,
     "no": 26,
@@ -2782,7 +2829,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Festas-Fidju-Fema.jpg"},
+    "sobre": "Festas noturnas de música e cultura no B.Leza para apoiar a luta contra o racismo em Portugal.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Festas-Fidju-Fema.jpg"
+  },
   {
     "id": 27,
     "no": 27,
@@ -2815,7 +2864,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Quotidiano-de-uma-Negra.jpg"},
+    "sobre": "Projeto digital que reúne histórias e experiências de vida ligadas à humanização e resistência.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Quotidiano-de-uma-Negra.jpg"
+  },
   {
     "id": 28,
     "no": 28,
@@ -2848,7 +2899,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Pagina-Voto-Negro.jpg"},
+    "sobre": "Voto Negro é uma campanha de mobilização eleitoral que pretende combater a abstenção e a exclusão social e política dos afrodescendentes em Portugal.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Pagina-Voto-Negro.jpg"
+  },
   {
     "id": 29,
     "no": 29,
@@ -2881,7 +2934,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Tal-Podcast.jpg"},
+    "sobre": "Podcast dedicado a dar espaço a vozes raramente ouvidas: portugueses negros, migrantes e pessoas racializadas.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Tal-Podcast.jpg"
+  },
   {
     "id": 30,
     "no": 30,
@@ -2914,7 +2969,9 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Mercado-Lusofono.jpg"},
+    "sobre": "Podcast dedicado a vozes da lusofonia.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/O-Mercado-Lusofono.jpg"
+  },
   {
     "id": 31,
     "no": 31,
@@ -2947,5 +3004,7 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Uma-Africana.jpg.jpg"}
+    "sobre": "Projeto musical dedicado à promoção da música eletrónica afrolatina.",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Uma-Africana.jpg.jpg"
+  }
 ]
