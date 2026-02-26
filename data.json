@@ -2024,9 +2024,8 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Nega-Filmes-e-Producoes-Artisticas.jpg",
-    "sobre": "Fundada em 1999, a Associação de Apoio aos Estudantes Africanos e Comunidades tem como missão contribuir para a valorização da formação científica, profissional e cultural dos estudantes africanos a frequentar instituições de ensino em Portugal, facilitando a sua integração. O trabalho passa pela colaboração com entidades públicas e privadas, na promoção de estágios, e no incentivo ao regresso dos jovens aos países de origem."
-  },
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Nega-Filmes-e-Producoes-Artisticas.jpg"
+ },
   {
     "id": 3,
     "no": 3,
@@ -2129,7 +2128,7 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg",
     "sobre": "A Associação de Solidariedade social Alto Cova da Moura (ASSACM) orienta a sua intervenção para o desenvolvimento local, e promoção da qualidade de vida da comunidade. Desde 1980 no terreno, funciona como Centro Comunitário, e pretende responder às necessidades da população, prestando apoio, nomeadamente jurídico e psicológico, e dinamizando atividades, por exemplo na área do desporto e cultura."
   },
   {
@@ -2234,7 +2233,7 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg",
     "sobre": "A Associação de Moradores do Bairro da Cruz Vermelha do Lumiar (AMBCVL) foi fundada em 1994, e tem como objetivo criar e melhorar as infraestruturas de apoio direto à comunidade residente, nomeadamente através de uma boa iluminação pública, segurança policial eficaz, criação de recintos desportivos e zonas verdes, e resolução de problemas de habitação, visando o aperfeiçoamento social, cultural, físico e cívico. "
   },
   {
@@ -2269,7 +2268,7 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg",
     "sobre": "A Associação Luso Caboverdeana de Sintra (ACAS Sintra) iniciou atividade em 2002, afirmando-se como uma entidade de intervenção comunitária que acolhe, capacita e integra populações vulneráveis do concelho de Sintra, atuando nas freguesias de Rio de Mouro e Algueirão Mem Martins. Com foco na inclusão social, dispõe de gabinete de apoio ao imigrante, e promove ações em várias áreas, como educação e emprego."
   },
   {
@@ -2411,41 +2410,6 @@
     },
     "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2025/11/Aurora-Negra.jpg",
     "sobre": "Fundada em 1988, a Olho Vivo - Associação para a Defesa do Património, Ambiente e Direitos Humanos trabalha na defesa dos direitos das pessoas migrantes, promovendo mais justiça social e ambiental. Entre as suas atividades destaca-se o funcionamento do Centro Local de Apoio à Integração de Migrantes, bem como a oferta de projectos promotores da inclusão social de crianças e jovens, onde se inclui o apoio ao estudo."
-  },
-  {
-    "id": 14,
-    "no": 14,
-    "type": "digital",
-    "nome": "Teatro Griot",
-    "identificacao": "",
-    "categoria": "grupo_teatral",
-    "subCategoria": "promocao_cultural; educacao; gastronomia; audiovisual",
-    "eMail": "",
-    "telefone": "",
-    "website": "",
-    "mediaLinks": {
-      "facebook": "",
-      "instagram": "",
-      "linkedin": "",
-      "twitter": "",
-      "youtube": ""
-    },
-    "address": {
-      "street": "",
-      "number": "",
-      "complement": "",
-      "city": "",
-      "country": "Portugal",
-      "postalCode": "",
-      "latitude": "",
-      "longitude": "",
-      "district": "",
-      "municipality": "",
-      "parish": "",
-      "fullAddress": ""
-    },
-    "img": "",
-    "sobre": "A Associação Passa Sabi surgiu em 2014, assumindo um papel cada vez mais ativo na mobilização, dinamização e valorização da comunidade do Bairro do Rêgo, em Lisboa. O seu programa de atividades inclui propostas culturais, sociais, económicas e desportivas, envolvendo crianças, jovens e população adulta, como forma de promover relações inter-geracionais, ao mesmo tempo que preserva e divulga a cultura dos residentes."
   },
   {
     "id": 15,
@@ -2689,7 +2653,7 @@
       "parish": "",
       "fullAddress": ""
     },
-    "img": "",
+    "img": "https://cesa.rc.iseg.ulisboa.pt/wp-content/uploads/2026/02/NA.jpg",
     "sobre": "Formalizada em 2007, a Girassol Solidário - Associação de Apoio aos Doentes Evacuados de Cabo Verde atua junto dos cidadãos evacuados de Cabo Verde, residentes na Área Metropolitana de Lisboa, contribuindo para uma melhor integração dos doentes no território nacional, com ações de carácter humanitário, psicossocial, lúdico, e de mediação intercultural. Apoia cerca de 100 pessoas, entre doentes e acompanhantes."
   },
   {

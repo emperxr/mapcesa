@@ -62,7 +62,7 @@
       background: rgba(255, 255, 255, 0.95);
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      padding: 14px;
+      padding: 18px;
       display: none;
       flex-direction: column;
       gap: 8px;
@@ -82,7 +82,7 @@
 
     #suggestPanel input,
     #suggestPanel textarea {
-      width: 100%;
+      width: 95%;
       border-radius: 8px;
       border: 1px solid #ccc;
       padding: 8px;
@@ -91,7 +91,7 @@
 
     #suggestPanel textarea {
       min-height: 90px;
-      resize: vertical;
+      resize: none;
     }
 
     #suggestPanel button {
@@ -770,7 +770,7 @@
   <div id="suggestPanel">
     <h3>Sugestões</h3>
 
-    <input id="suggestEmail" type="email" placeholder="O teu email (opcional)" />
+    <input id="suggestEmail" type="email" placeholder="O teu email" />
 
     <textarea id="suggestMsg" placeholder="Escreve aqui a tua sugestão..."></textarea>
 
