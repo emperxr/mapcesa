@@ -37,71 +37,71 @@
     }
 
     /* Botão sugestões */
-#suggestBtn {
-  position: fixed;
-  right: 16px;
-  bottom: 28px;
-  z-index: 1500;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  border: none;
-  background: #E47D29;
-  color: #fff;
-  font-size: 26px;
-  cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-}
+    #suggestBtn {
+      position: fixed;
+      right: 16px;
+      bottom: 28px;
+      z-index: 1500;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      border: none;
+      background: #E47D29;
+      color: #fff;
+      font-size: 26px;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
 
-/* Painel sugestões */
-#suggestPanel {
-  position: fixed;
-  right: 16px;
-  bottom: 100px;
-  width: 300px;
-  background: rgba(255,255,255,0.95);
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  padding: 14px;
-  display: none;
-  flex-direction: column;
-  gap: 8px;
-  z-index: 1500;
-}
+    /* Painel sugestões */
+    #suggestPanel {
+      position: fixed;
+      right: 16px;
+      bottom: 100px;
+      width: 300px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      padding: 14px;
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 1500;
+    }
 
-#suggestPanel.open {
-  display: flex;
-}
+    #suggestPanel.open {
+      display: flex;
+    }
 
-#suggestPanel h3 {
-  margin: 0 0 6px 0;
-  text-align: center;
-  color: var(--accent);
-  font-family: var(--font-subtitle);
-}
+    #suggestPanel h3 {
+      margin: 0 0 6px 0;
+      text-align: center;
+      color: var(--accent);
+      font-family: var(--font-subtitle);
+    }
 
-#suggestPanel input,
-#suggestPanel textarea {
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  padding: 8px;
-  font-family: var(--font-body);
-}
+    #suggestPanel input,
+    #suggestPanel textarea {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      padding: 8px;
+      font-family: var(--font-body);
+    }
 
-#suggestPanel textarea {
-  min-height: 90px;
-  resize: vertical;
-}
+    #suggestPanel textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
 
-#suggestPanel button {
-  border: none;
-  background: var(--accent);
-  color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-}
+    #suggestPanel button {
+      border: none;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
 
     /* Search (top-right) */
     .search-box {
@@ -764,18 +764,18 @@
   <div id="digitalPreview3" aria-hidden="false" role="list"></div>
 
   <!-- BOTÃO SUGESTÕES -->
-<button id="suggestBtn" title="Enviar sugestão">💡</button>
+  <button id="suggestBtn" title="Enviar sugestão">💡</button>
 
-<!-- PAINEL SUGESTÕES -->
-<div id="suggestPanel">
-  <h3>Sugestões</h3>
+  <!-- PAINEL SUGESTÕES -->
+  <div id="suggestPanel">
+    <h3>Sugestões</h3>
 
-  <input id="suggestEmail" type="email" placeholder="O teu email (opcional)" />
+    <input id="suggestEmail" type="email" placeholder="O teu email (opcional)" />
 
-  <textarea id="suggestMsg" placeholder="Escreve aqui a tua sugestão..."></textarea>
+    <textarea id="suggestMsg" placeholder="Escreve aqui a tua sugestão..."></textarea>
 
-  <button id="sendSuggest">Enviar</button>
-</div>
+    <button id="sendSuggest">Enviar</button>
+  </div>
 
   <div id="map"></div>
 
@@ -1301,6 +1301,31 @@
       const allSubcatKeys = Object.keys(subcatLabelsByKey);
       const activeSubcats = new Set(allSubcatKeys);
 
+      // 🔄 reset automático ao trocar tipo de filtro
+      function resetFilters() {
+
+        // restaurar forma jurídica
+        activeCategories.clear();
+        allCategoryNames.forEach(c => activeCategories.add(c));
+
+        document.querySelectorAll('#filterPanel .filter-item')
+          .forEach(btn => btn.classList.add('active'));
+
+        const t1 = document.querySelector('#filterPanel .toggle-all');
+        if (t1) t1.textContent = 'Ocultar';
+
+        // restaurar subcategorias
+        excludedSubcats.clear();
+
+        document.querySelectorAll('#filterCategories .filter-item')
+          .forEach(btn => btn.classList.add('active'));
+
+        const t2 = document.querySelector('#filterCategories .toggle-all');
+        if (t2) t2.textContent = 'Ocultar';
+
+        recomputeVisibility();
+      }
+
       function recomputeVisibility() {
         markers.forEach(({ marker, mainCat, subCats }) => {
 
@@ -1602,31 +1627,31 @@
       }
 
       // === SUGESTÕES ===
-const suggestBtn = document.getElementById('suggestBtn');
-const suggestPanel = document.getElementById('suggestPanel');
-const sendSuggest = document.getElementById('sendSuggest');
+      const suggestBtn = document.getElementById('suggestBtn');
+      const suggestPanel = document.getElementById('suggestPanel');
+      const sendSuggest = document.getElementById('sendSuggest');
 
-suggestBtn.addEventListener('click', () => {
-  suggestPanel.classList.toggle('open');
-});
+      suggestBtn.addEventListener('click', () => {
+        suggestPanel.classList.toggle('open');
+      });
 
-sendSuggest.addEventListener('click', () => {
-  const email = document.getElementById('suggestEmail').value || 'Sem email';
-  const msg = document.getElementById('suggestMsg').value;
+      sendSuggest.addEventListener('click', () => {
+        const email = document.getElementById('suggestEmail').value || 'Sem email';
+        const msg = document.getElementById('suggestMsg').value;
 
-  if (!msg.trim()) {
-    alert('Escreve uma mensagem primeiro 🙂');
-    return;
-  }
+        if (!msg.trim()) {
+          alert('Escreve uma mensagem primeiro 🙂');
+          return;
+        }
 
-  const subject = encodeURIComponent('Sugestão Mapa CEsA');
-  const body = encodeURIComponent(
-    `Email: ${email}\n\nMensagem:\n${msg}`
-  );
+        const subject = encodeURIComponent('Sugestão Mapa CEsA');
+        const body = encodeURIComponent(
+          `Email: ${email}\n\nMensagem:\n${msg}`
+        );
 
-  window.location.href =
-    `mailto:empireporto@gmail.com?subject=${subject}&body=${body}`;
-});
+        window.location.href =
+          `mailto:empireporto@gmail.com?subject=${subject}&body=${body}`;
+      });
 
       function filterSearch(q) {
         const nq = normalizeText(q);
@@ -1677,6 +1702,26 @@ sendSuggest.addEventListener('click', () => {
       searchResults.style.zIndex = 1600;
       searchResults.style.maxHeight = '360px';
       searchResults.style.overflowY = 'auto';
+
+      // 🔗 ligar reset ao trocar modo (DEPOIS do mapa existir)
+      filterModePanel.querySelectorAll('.mode-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+
+          resetFilters(); // 🔥 só agora, seguro
+
+          const mode = btn.getAttribute('data-mode');
+
+          if (mode === 'category') {
+            filterCategories.classList.add('open');
+            filterPanel.classList.remove('open');
+          } else if (mode === 'legal') {
+            filterPanel.classList.add('open');
+            filterCategories.classList.remove('open');
+          }
+
+          filterModePanel.classList.remove('open');
+        });
+      });
 
     }).catch(err => {
       console.error('Erro a carregar data.json', err);
