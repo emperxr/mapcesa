@@ -36,6 +36,73 @@
       width: 100%;
     }
 
+    /* Botão sugestões */
+#suggestBtn {
+  position: fixed;
+  right: 16px;
+  bottom: 28px;
+  z-index: 1500;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: none;
+  background: #E47D29;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Painel sugestões */
+#suggestPanel {
+  position: fixed;
+  right: 16px;
+  bottom: 100px;
+  width: 300px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  padding: 14px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1500;
+}
+
+#suggestPanel.open {
+  display: flex;
+}
+
+#suggestPanel h3 {
+  margin: 0 0 6px 0;
+  text-align: center;
+  color: var(--accent);
+  font-family: var(--font-subtitle);
+}
+
+#suggestPanel input,
+#suggestPanel textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-family: var(--font-body);
+}
+
+#suggestPanel textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+#suggestPanel button {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
     /* Search (top-right) */
     .search-box {
       position: absolute;
@@ -695,6 +762,20 @@
 
   <!-- Preview com 3 digitais -->
   <div id="digitalPreview3" aria-hidden="false" role="list"></div>
+
+  <!-- BOTÃO SUGESTÕES -->
+<button id="suggestBtn" title="Enviar sugestão">💡</button>
+
+<!-- PAINEL SUGESTÕES -->
+<div id="suggestPanel">
+  <h3>Sugestões</h3>
+
+  <input id="suggestEmail" type="email" placeholder="O teu email (opcional)" />
+
+  <textarea id="suggestMsg" placeholder="Escreve aqui a tua sugestão..."></textarea>
+
+  <button id="sendSuggest">Enviar</button>
+</div>
 
   <div id="map"></div>
 
@@ -1519,6 +1600,33 @@
         });
         searchResults.style.display = 'block';
       }
+
+      // === SUGESTÕES ===
+const suggestBtn = document.getElementById('suggestBtn');
+const suggestPanel = document.getElementById('suggestPanel');
+const sendSuggest = document.getElementById('sendSuggest');
+
+suggestBtn.addEventListener('click', () => {
+  suggestPanel.classList.toggle('open');
+});
+
+sendSuggest.addEventListener('click', () => {
+  const email = document.getElementById('suggestEmail').value || 'Sem email';
+  const msg = document.getElementById('suggestMsg').value;
+
+  if (!msg.trim()) {
+    alert('Escreve uma mensagem primeiro 🙂');
+    return;
+  }
+
+  const subject = encodeURIComponent('Sugestão Mapa CEsA');
+  const body = encodeURIComponent(
+    `Email: ${email}\n\nMensagem:\n${msg}`
+  );
+
+  window.location.href =
+    `mailto:empireporto@gmail.com?subject=${subject}&body=${body}`;
+});
 
       function filterSearch(q) {
         const nq = normalizeText(q);
