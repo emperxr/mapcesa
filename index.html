@@ -41,7 +41,7 @@
       position: fixed;
       right: 16px;
       bottom: 28px;
-      z-index: 1500;
+      z-index: 800;
       width: 58px;
       height: 58px;
       border-radius: 50%;
@@ -129,10 +129,10 @@
 
     #searchResults {
       position: absolute;
-      top: 46px;
+      margin: 7px;
       right: 0;
       z-index: 1500;
-      width: 376px;
+      width: 370px;
       max-height: 300px;
       overflow-y: auto;
       background: #fff;
@@ -226,7 +226,7 @@
       border: 1px solid rgba(0, 0, 0, 0.08);
       display: none;
       flex-direction: column;
-      z-index: 2000;
+      z-index: 1200;
       overflow: hidden;
       animation: fadeIn 0.2s ease;
       font-family: var(--font-body);
@@ -298,12 +298,12 @@
       top: 56px;
       width: 35%;
       max-width: 400px;
-      min-width: 280px;
+      min-width: 395px;
       height: calc(100vh - 96px);
       background: var(--glass);
       border-radius: 12px;
       box-shadow: var(--panel-shadow);
-      z-index: 2000;
+      z-index: 1200;
       transform: translateX(420px);
       transition: transform 260ms ease;
       overflow-y: auto;
@@ -674,7 +674,7 @@
       left: 50%;
       top: calc(95% - 110px);
       transform: translateX(-50%);
-      z-index: 1490;
+      z-index: 1000;
       display: flex;
       gap: 10px;
       align-items: center;
@@ -1325,31 +1325,30 @@
 
         recomputeVisibility();
       }
+function recomputeVisibility() {
+  const isSubcategoryMode = filterCategories.classList.contains('open');
 
-      function recomputeVisibility() {
-        markers.forEach(({ marker, mainCat, subCats }) => {
+  markers.forEach(({ marker, mainCat, subCats }) => {
 
-          // === FORMA JURÍDICA (INCLUSÃO) ===
-          const catOk =
-            activeCategories.size === 0
-              ? false
-              : activeCategories.has(mainCat);
+    let visible = false;
 
-          // === ÁREA DE ATUAÇÃO (EXCLUSÃO) ===
-          const hasExcluded =
-            subCats.some(sc => excludedSubcats.has(sc));
+    if (isSubcategoryMode) {
+      // 🔥 MODO ÁREA DE ATUAÇÃO (IGNORA categorias)
+      visible = subCats.some(sc => !excludedSubcats.has(sc));
+    } else {
+      // 🔵 MODO FORMA JURÍDICA (comportamento normal)
+      visible = activeCategories.has(mainCat);
+    }
 
-          const visible = catOk && !hasExcluded;
+    if (marker._icon) {
+      marker._icon.style.display = visible ? '' : 'none';
+    }
+    if (marker._shadow) {
+      marker._shadow.style.display = visible ? '' : 'none';
+    }
 
-          if (marker._icon) {
-            marker._icon.style.display = visible ? '' : 'none';
-          }
-          if (marker._shadow) {
-            marker._shadow.style.display = visible ? '' : 'none';
-          }
-        });
-      }
-
+  });
+}
 
       // === FILTROS por forma jurídica (filterPanel) ===
       const filterPanelElem = document.getElementById('filterPanel');
